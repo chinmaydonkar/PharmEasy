@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            /* y :Hide vertical scrollbar */
+       overflow-x: hidden;
+        }
+     /* #d{
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#d>div{
+    position: relative;
+}
+#d>div>a>img{
+    width: 50%;
+}
+#d>div>button{
+    position:absolute ;
+    top: 40%;
+    font-size:40px ;
+    background-color: transparent;
+    border: none;
+}
+#d>div>button:nth-child(2){
+    left: 20px;
+}
+#d>div>button:nth-child(3){
+    right: 20px;
+} */
+
+#A {
+  width: 92%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 50px;
+}
+#A > section > div img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#A > section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+  /* overflow-x: ; */
+}
+
+#A > section::-webkit-scrollbar {
+  visibility: hidden;
+}
+#A > section > div {
+  min-width: auto;
+  height: auto;
+  position: relative;
+  /* left: 0;
+  color: black;
+  transition: 0.5s; */
+  margin: 18px;
+  justify-content: center;
+  align-items: center;
+}
+/* .offer{
+    border: 2px solid green;
+} */
+.offer>img{
+    height: 80px;
+    /* margin: 10px; */
+    border: 2px solid;
+
+}
+#AB {
+  width: 92%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 50px;
+}
+#AB > section {
+  /* width: 200px; */
+  height: auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+  border: 2px solid blue;
+  /* overflow-x: ; */
+}
+.offer:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+#B>#AB>section>div{
+    width: 50px 350px;
+    border: 1px solid rgb(166, 164, 164);
+    justify-content: space-around;
+    display: flex;
+    border-radius: 20px;
+}
+.offer>a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    
+}
+#A>section.Category{
+    min-width: 20%;
+    text-align: center;
+    border: 2px solid red;
+    margin: 10%;
+    
+}
+.Category>a>img{
+    width: 250px;
+    border: 1px solid;
+}
+.Category{
+    border: 4px solid;
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <main id="A">
+            <section>
+              <div class="">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/3c8837727b0-hp.jpg" alt="">
+              </div>
+              <div class="">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg" alt="">
+              </div>
+              <div class="">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/fb080c50a17-LabApp.jpg" alt="">
+              </div>
+              
+            </section>
+          </main>
+
+          <div id="B">
+             <div>
+                <h1>Offers Just for You</h1>
+             </div>
+             <div id="AB">
+                <section >
+                    <div class="offer" >
+                      <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                      <a href=""><p >Flat 27% OFF + up o Rs.1000 cashback</p></a>
+                    </div>
+                    <div class="offer">
+                      <img src="https://cms-contents.pharmeasy.in/offer/c2c9f64e31c-40.jpg?dim=1440x0" alt="">
+                      <a href=""><p >Flat 20% OFF + 20% cashback</p></a>
+
+                    </div>
+                    <div class="offer">
+                      <img src="https://cms-contents.pharmeasy.in/offer/b697d29a790-25.jpg?dim=1440x0" alt="">
+                      <a href=""><p >Flat 25% OFF + up o Rs.1000 cashback</p></a>
+
+                    </div>
+                    <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                        <a href=""><p >Flat 27% OFF + up o Rs.1000 cashback</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/c6b6d18320a-11.jpg?dim=1440x0" alt="">
+                        <a href=""><p >Flat 15% OFF + Additional 5% cashback on 1st medicine order.</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/7c06229dff2-3_400x400.png?dim=1440x0" alt="">
+                        <a href=""><p >Get FLAT Rs.450 on orders above Rs 1499</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/beff77d2d65-Diagnostics-11-min.png?dim=1440x0" alt="">
+                        <a href=""><p >Get FLAT Rs.1000 on booking 2 Comprehensive Full Body Checkup.</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/0c2c10949e5-ontime_400_400-min.jpg" alt="">
+                        <a href=""><p >Our Phlebotomist will reach your home on time or before, otherwise you will have 100% cashbak.</p></a>
+
+                      </div>
+                  </section>
+             </div>
+          </div>
+
+          <div id="C">
+            <div>
+                <h1>Shop by Categories</h1>
+            </div>
+            <div id="A">
+                <section >
+                    <div class="Category" >
+                      <a href="">
+                        <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                      <p >Flat 27% OFF + up o Rs.1000 cashback</p>
+                      </a>
+                    </div>
+
+                    <div class="Category">
+                      <a href="">
+                        <img src="https://cms-contents.pharmeasy.in/offer/c2c9f64e31c-40.jpg?dim=1440x0" alt="">
+                      <p >Flat 20% OFF + 20% cashback</p>
+                    </a>
+                     
+
+                    </div>
+                    <div class="Category">
+                     <a href="">
+                        <img src="https://cms-contents.pharmeasy.in/offer/b697d29a790-25.jpg?dim=1440x0" alt="">
+                       <p >Flat 25% OFF + up o Rs.1000 cashback</p>
+                     </a>
+
+                    </div>
+                    <div class="Category">
+                        <a href="">
+                            <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                        <p >Flat 27% OFF + up o Rs.1000 cashback</p>
+                        </a>
+                     </div>
+
+                     <div class="Category" >
+                        <a href="">
+                          <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                        <p >Flat 27% OFF + up o Rs.1000 cashback</p>
+                        </a>
+                      </div>
+
+                      <div class="Category">
+                        <a href="">
+                          <img src="https://cms-contents.pharmeasy.in/offer/c2c9f64e31c-40.jpg?dim=1440x0" alt="">
+                        <p >Flat 20% OFF + 20% cashback</p>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cms-contents.pharmeasy.in/offer/b697d29a790-25.jpg?dim=1440x0" alt="">
+                         <p >Flat 25% OFF + up o Rs.1000 cashback</p>
+                       </a>
+  
+                      </div>
+
+                      <div class="Category">
+                          <a href="">
+                              <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                          <p >Flat 27% OFF + up o Rs.1000 cashback</p>
+                          </a>
+                       </div>
+                      <!-- </div>
+                      <div class="Category">
+                        <img src="https://cms-contents.pharmeasy.in/offer/c6b6d18320a-11.jpg?dim=1440x0" alt="">
+                        <a href=""><p >Flat 15% OFF + Additional 5% cashback on 1st medicine order.</p></a>
+
+                      </div>
+                      <div class="Category">
+                        <img src="https://cms-contents.pharmeasy.in/offer/7c06229dff2-3_400x400.png?dim=1440x0" alt="">
+                        <a href=""><p >Get FLAT Rs.450 on orders above Rs 1499</p></a>
+
+                      </div>
+                      <div class="Category">
+                        <img src="https://cms-contents.pharmeasy.in/offer/beff77d2d65-Diagnostics-11-min.png?dim=1440x0" alt="">
+                        <a href=""><p >Get FLAT Rs.1000 on booking 2 Comprehensive Full Body Checkup.</p></a>
+
+                      </div>
+                      <div class="Category">
+                        <img src="https://cms-contents.pharmeasy.in/offer/0c2c10949e5-ontime_400_400-min.jpg" alt="">
+                        <a href=""><p >Our Phlebotomist will reach your home on time or before, otherwise you will have 100% cashback.</p></a>
+
+                      </div> -->
+                  </section>
+             </div>
+          </div>
+    </div>
+  
+
+</body>
+</html>
+
+<script>
+ let img= document.querySelector("#d>div>a>img");
+
+let buttons=document.querySelectorAll("#d>div>button");
+let imgnum=0;
+let imgarr=[
+    "https://cdn01.pharmeasy.in/dam/banner/banner/3c8837727b0-hp.jpg",
+    "https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg",
+    "https://cdn01.pharmeasy.in/dam/banner/banner/fb080c50a17-LabApp.jpg",
+    
+        ]
+
+
+
+buttons[1].addEventListener("click",
+function(){
+if(imgnum===imgarr.length-1)
+{
+    imgnum=0;
+}
+else
+{
+    imgnum++;
+}
+img.src=imgarr[imgnum];
+})
+
+//   let img = [
+//         "https://cms-contents.pharmeasy.in/banner/fcf06e6cf90-STAYHOMEDWEB.jpg?dim=1440x0&dpr=1.25&q=100",
+//         "https://cms-contents.pharmeasy.in/banner/3b30799ae78-COVIDFREE8JUNE.jpg?dim=1440x0&dpr=1.25&q=100",
+//         "https://cms-contents.pharmeasy.in/banner/fef1ef3c06a-DWEBCOVID.jpg?dim=1440x0&dpr=1.25&q=100",
+//       ]
+//       var i = -1
+//       setInterval(function () {
+//         i++
+//         if (i == img.length) {
+//           i = 0
+//         }
+//         let cont = document.getElementById("cont")
+//         cont.innerHTML = `<img src=${img[i]} alt="img${i}">`
+//       }, 2000)
+
+</script>
