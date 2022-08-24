@@ -1,0 +1,132 @@
+body{
+   
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    color: #4f585e;
+   
+}
+#upper{
+    width: 80%;
+    margin: auto;
+}
+#code{
+    display: flex;
+    align-items: center;
+}
+#bottom{
+    display: flex;
+    justify-content: space-between;
+}
+#Main_cart{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 20px;
+   
+}
+#cart{
+   display: flex;
+   align-items: center;
+   height: 200px;
+   /* padding: 20px; */
+   overflow: hidden;
+}
+#cart>div>img{
+    width: 150px;
+   margin-right: 20px;
+}
+#offer_container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 50px;
+ 
+}
+#bottom{
+    padding: 0px 20px 0px 20px;
+}
+#bottom>div:last-child>h3{
+    color: #10847e;
+}
+#filters{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+#filters>div{
+    border: 1px solid #dfe3e6;
+    border-radius: 30px;
+    padding: 5px 15px;
+    color: #4f585e;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+#filters>div:first-child{
+    background: #3bb896;
+    border-color: #3bb896;
+    color: #fff;
+    font-weight: 700;
+}
+span{
+    font-size: 16px;
+    font-weight: 700;
+}
+.OfferTable_offerKey__2DZN6 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.OfferTable_offerValue__26VyZ {
+    font-weight: 700;
+}
+#discounts{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#discounts>div>p{
+    font-weight: 700;
+}
+#disclaimer{
+    margin: auto;
+    width: 80%;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+#query{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+}
+#query>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 100px) and (max-width: 1020px){
+
+    #offer_container{
+        margin: auto;
+        width: 80%;
+       
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,1fr);
+        gap: 20px; */
+        margin-top: 50px;
+        display: block;
+     
+    }
+    #Main_cart{
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
