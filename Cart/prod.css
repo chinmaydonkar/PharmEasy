@@ -1,0 +1,81 @@
+#page_conatiner{
+    border: 1px solid gold;
+    width: 75%;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+}
+#sort_filter_box{
+    border: 3px solid brown;
+    width: 30%;
+    height: 1000px;
+}
+#covid_prod{
+    border: 3px solid greenyellow;
+    width: 70%;
+    height: 1000px;
+}
+
+/* Product Section */
+#covid_prod{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(10,1fr);
+    gap: 15px;
+    width: 80%;
+    border: 1px solid transparent;
+    margin: auto;
+    margin-top: 30px;
+ }
+ #prodImage{
+    height: 200px;
+    width: 85%;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+ }
+ #covid_prod>#prodBox{
+    border: 1px solid silver;
+ }
+ #prodDesc{
+    padding-left: 20px;
+    padding-top: 10px;
+ }
+ #prodDesc+#prodAmt{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: rgb(51,122,183);
+ }
+ #prodBtn{
+    background-color: #04AA6D;
+    color: #eff;
+    padding: 10px 10px;
+    display: block;
+    margin: auto;
+    border: white;
+    border-radius: 15px;
+ }
+ #prodBtn:hover{
+    background-color: #45a049;
+ }
+ .categorised{
+    width: 45%;
+    margin: auto;
+    margin-top: 15px;
+ }
+ #viewCart{
+   display: flex;
+   position: absolute;
+   left: 1200px;
+   top: 70px;
+ }
+ #viewCart>i{
+  padding-top: 8px;
+ }
+ #viewCart>p{
+   padding-left: 8px;
+   color: #45a049;
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 25px;
+ }
