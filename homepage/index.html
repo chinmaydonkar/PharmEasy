@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            /* y :Hide vertical scrollbar */
+       overflow-x: hidden;
+        }
+        p{
+            font-family:sans-serif;
+            color: black;
+        }
+        a{
+    text-decoration: none;
+}
+h1{
+    font-family:sans-serif;
+
+}
+
+     /* #d{
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#d>div{
+    position: relative;
+}
+#d>div>a>img{
+    width: 50%;
+}
+#d>div>button{
+    position:absolute ;
+    top: 40%;
+    font-size:40px ;
+    background-color: transparent;
+    border: none;
+}
+#d>div>button:nth-child(2){
+    left: 20px;
+}
+#d>div>button:nth-child(3){
+    right: 20px;
+} */
+
+#A , #C{
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 50px;
+}
+#A > section > div img {
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+#A > section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+  /* overflow-x: ; */
+}
+
+#A > section::-webkit-scrollbar {
+  visibility: hidden;
+}
+#A > section > div {
+  min-width: auto;
+  height: auto;
+  position: relative;
+  /* left: 0;
+  color: black;
+  transition: 0.5s; */
+  margin: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+#B {
+  width: 92%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 50px;
+}
+#B > section > div img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#AB > section {
+  height: auto;
+  display: flex;
+  /* justify-content: left; */
+  overflow-x: auto;
+/* justify-content: space-around; */
+}
+#AB>section>div.offer{
+    justify-content: space-around;
+}
+
+.offer{
+    display: flex;
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 15px;
+    width: 100%;
+    
+}
+
+#AB > section::-webkit-scrollbar {
+  visibility: hidden;
+}
+#AB > section > div {
+  min-width: 27%;
+  height: auto;
+  position: relative;
+  transition: 0.5s; 
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer>img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.offer:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.offer>a{
+    font-size: 22px; 
+}
+
+#C>#A section>div{
+    height: auto;
+}
+
+.Category>a>img{
+    width: 170px; 
+    height: 190px;
+ padding: 35px 25px;
+  border: 2px solid rgb(210, 208, 208);
+    transition: 0.3s;
+}
+.Category>a>img:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+
+.Category{
+    font-size: 22px;
+    text-align: center;
+    line-break: auto;
+}
+
+#D{
+    width: 88%;
+    margin: auto;
+    display:flex ;
+    border: 1px solid rgb(225, 222, 222);
+    border-radius: 8px;
+}
+
+#D>div:first-child{
+    display: flex;
+    padding: 35px 50px;
+   
+
+   
+}
+.first{
+    background-color: rgb(238,244,255);
+    font-family:sans-serif;
+
+}
+
+.first>div>img{
+    width: 140px;
+    margin: 20px 35px;
+}
+
+h4{
+    font-family:sans-serif;
+    color: grey;
+    font-size: 19px;
+}
+
+.first>div>a>button{
+padding: 10px 40px;
+font-family:sans-serif;
+font-size: 20px;
+font-weight: bold;
+border-radius: 5px;
+background-color: rgb(16, 132, 126);
+color: white;
+cursor: pointer;
+}
+
+#D>div:last-child>div{
+    display: flex;
+    font-family:sans-serif;
+     margin:15px 50px;
+}
+
+.second>div{
+  margin: 5px;
+  font-size: 19px
+}
+.price{
+    display: flex;
+    line-height: 0px;
+}
+.price>p{
+    margin-left: 5px;
+   
+   
+}
+.cut{
+    text-decoration: line-through;
+}
+
+.price:last-child>p:last-child{
+    color:red;
+}
+#E{
+    width: 92%;
+    margin: auto;
+}
+#E>div{
+    display: flex;
+    overflow-x: auto;
+}
+#E>div::-webkit-scrollbar {
+  visibility: hidden;
+}
+#E>div img{
+    width: 280px;
+    margin: 25px;
+    
+}
+
+#F{
+    margin: auto;
+    margin-top: 35px;
+    height: 260px;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(199, 94, 188);
+    background-image: linear-gradient( to right, rgba(255,0,0,0), rgb(85, 168, 216));
+}
+#F p{
+    font-size:20px;
+    color: rgb(248, 242, 242);
+}
+#F h1{
+    color: white;
+}
+#F button{
+    padding: 12px 35px;
+    border-radius: 10px;
+    background-color: RGB(245, 179, 38);
+    font-size: 18px;
+    cursor: pointer;
+}
+#G{
+    width: 92%;
+    margin: auto;
+    margin-top: 45px;
+}
+#G div{
+    display: flex;
+    width: 100%;
+}
+
+#G div div{
+    border-radius: 20px;
+    margin: 25px;
+    padding: 20px;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(241,250,254);
+    font-family:sans-serif;
+}
+
+#G div div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.offer2 img{
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <main id="A">
+            <section>
+              <div class="">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/3c8837727b0-hp.jpg" alt="">
+              </div>
+              <div class="">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg" alt="">
+              </div>
+              <div class="">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/fb080c50a17-LabApp.jpg" alt="">
+              </div>
+              
+            </section>
+          </main>
+
+          <div id="B">
+             <div>
+                <h1>Offers Just for You</h1>
+             </div>
+             <div id="AB">
+                <section >
+                    <div class="offer" >
+                      <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                      <a href=""><p >Flat 27% OFF + upto Rs.1000 cashback</p></a>
+                    </div>
+                    <div class="offer">
+                      <img src="https://cms-contents.pharmeasy.in/offer/c2c9f64e31c-40.jpg?dim=1440x0" alt="">
+                      <a href=""><p >Flat 20% OFF + 20% cashback</p></a>
+
+                    </div>
+                    <div class="offer">
+                      <img src="https://cms-contents.pharmeasy.in/offer/b697d29a790-25.jpg?dim=1440x0" alt="">
+                      <a href=""><p >Flat 25% OFF + up o Rs.1000 cashback</p></a>
+
+                    </div>
+                    <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/7d10cb0c4f4-PE.png?dim=1440x0" alt="">
+                        <a href=""><p >Flat 27% OFF + up o Rs.1000 cashback</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/c6b6d18320a-11.jpg?dim=1440x0" alt="">
+                        <a href=""><p >Flat 15% OFF + Additional 5% cashback on 1st medicine order.</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/7c06229dff2-3_400x400.png?dim=1440x0" alt="">
+                        <a href=""><p >Get FLAT Rs.450 on orders above Rs 1499</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/beff77d2d65-Diagnostics-11-min.png?dim=1440x0" alt="">
+                        <a href=""><p >Get FLAT Rs.1000 on booking 2 Comprehensive Full Body Checkup.</p></a>
+
+                      </div>
+                      <div class="offer">
+                        <img src="https://cms-contents.pharmeasy.in/offer/0c2c10949e5-ontime_400_400-min.jpg" alt="">
+                        <a href=""><p >Our Phlebotomist will reach your home on time or before, otherwise you will have 100% cashbak.</p></a>
+
+                      </div>
+                  </section>
+             </div>
+          </div>
+
+          <div id="C">
+            <div>
+                <h1>Shop by Categories</h1>
+            </div>
+            <div id="A">
+                <section >
+                    <div class="Category" >
+                      <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6d462f424a43372ea8b7b6f8ca13e052.png?f=png?dim=256x0" alt="">
+                      <p >Covid essentials</p>
+                      </a>
+                    </div>
+
+                    <div class="Category">
+                      <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9f446c0e74273d70b0baf85e4ff0f76a.png?f=png?dim=256x0" alt="">
+                      <p >Personal Care</p>
+                    </a>
+                     
+
+                    </div>
+                    <div class="Category">
+                     <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/aace6d1f0dc03f1f8c6e26dd880e1934.png?f=png?dim=256x0" alt="">
+                       <p >Health food and drinks</p>
+                     </a>
+
+                    </div>
+                    <div class="Category">
+                        <a href="">
+                            <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/3c7ab4d29c6631f7a5cb7eafd3bfbc79.png?f=png?dim=256x0" alt="">
+                        <p >Beauty</p>
+                        </a>
+                     </div>
+
+                     <div class="Category" >
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9b3ad6971475304e9e1614ac30d4545a.png?f=png?dim=256x0" alt="">
+                        <p >Skin care</p>
+                        </a>
+                      </div>
+
+                      <div class="Category">
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/dc96175686f135b5a22d1e57165d0246.png?f=png?dim=256x0" alt="">
+                        <p >Home care</p>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ecad9a974e003fb987858b3ee81413c6.png?f=png?dim=256x0" alt="">
+                         <p >Ayurvedic care</p>
+                       </a>
+                      </div>
+
+                      <div class="Category">
+                          <a href="">
+                              <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f970ef9868093acb9d1d37a9387912f9.png?f=png?dim=256x0" alt="">
+                          <p >Sexual wellness</p>
+                          </a>
+                       </div>
+
+                       <div class="Category">
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/9cf0c849550a38109738815b3fc2fac6.png?f=png?dim=256x0" alt="">
+                        <p >Fitness supplements</p>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/aace6d1f0dc03f1f8c6e26dd880e1934.png?f=png?dim=256x0" alt="">
+                         <p >Mother and baby care</p>
+                       </a>
+  
+                      </div>
+                      <div class="Category">
+                          <a href="">
+                              <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ac80578390a23bcfb1ed5a4551886ea7.png?f=png?dim=256x0" alt="">
+                          <p >Healthcare devices</p>
+                          </a>
+                       </div>
+  
+                       <div class="Category" >
+                          <a href="">
+                            <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/e0863336e309387bb5bdf0b8e1d314e4.png?f=png?dim=256x0" alt="">
+                          <p >Health condition</p>
+                          </a>
+                        </div>
+  
+                        <div class="Category">
+                          <a href="">
+                            <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/c3cfab4f38b63297b4096607e1349d61.png?f=png?dim=256x0" alt="">
+                          <p >Diabetic care</p>
+                        </a>
+                         
+    
+                        </div>
+                        <div class="Category">
+                         <a href="">
+                            <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4eb8bfa2d4ea3bc0a5cade3b15aa246e.png?f=png?dim=256x0" alt="">
+                           <p >Elderly care</p>
+                         </a>
+                        </div>
+  
+                        <div class="Category">
+                            <a href="">
+                                <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="">
+                            <p >Top products</p>
+                            </a>
+                         </div>
+            
+                  </section>
+             </div>
+          </div>
+
+          <div id="D">
+                  <div class="first">
+                        <div>
+                            <img src="https://assets.pharmeasy.in/apothecary/images/rx_upload.svg?dim=1440x0" alt="">
+                        </div>
+                        <div >
+                            <h2>Order with Prescription</h2>
+                            <h4>Upload prescription and we will deliver your medicines</h4>
+                            <a href=""><button>Upload</button></a>
+                        </div>
+                  </div>
+                  <div>
+                        <div>
+                            <h3>How does this work?</h3>
+                        </div>
+                        <div class="second">
+                            <div>
+                                <p>1. Upload a photo of your prescription</p>
+                                <p>2. Add delivery address and place the order</p>
+                            </div>
+                            <div>
+                                 <p>3. We will call you to confirm the medicines</p>
+                                 <p>4. Now, sit back! your medicines will get delivered at your doorstep</p>  
+                            </div>
+                        </div>
+
+                  </div>
+          </div>
+
+          <div id="C">
+            <div>
+                <h1>New Launches</h1>
+                <h4>New Wellness range just for you</h4>
+            </div>
+            <div id="A">
+                <section >
+                    <div class="Category" >
+                      <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/E76033/godrej-good-knight-advanced-power-activ-cartridge-twin-saver-mosquito-repellent-refill-2x45-ml-1-1641794006.jpg?dim=1440x0" alt="">
+                         <p>Godrej Good Knight Advance Power</p>
+                            <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$145</p>
+                            </div>
+                            <div class="price">
+                                <p>$136.30</p>
+                                <p>6%OFF</p>
+                            </div>
+                      </a>
+                    </div>
+
+                    <div class="Category">
+                      <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/R76285/pharmeasy-multivitamin-women-bottle-of-60-2-1658471942.jpg?dim=1440x0" alt="">
+                         <p >Pharmeasy Multivitamin Women</p>
+                       <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$799</p>
+                            </div>
+                            <div class="price">
+                                <p>$399.50</p>
+                                <p>50%OFF</p>
+                            </div>
+                     </a>
+                     
+
+                    </div>
+                    <div class="Category">
+                     <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/J65828/all-out-ultra-mosquito-repellant-refills-pack-of-2-2-1645196518.jpg?dim=1440x0" alt="">
+                       <p >All Out Ultra Mosquito Repellant</p>
+                            <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$144.00</p>
+                            </div>
+                            <div class="price">
+                                <p>$129.60</p>
+                                <p>10%OFF</p>
+                            </div>
+                     </a>
+
+                    </div>
+                    <div class="Category">
+                        <a href="">
+                            <img src="https://cdn01.pharmeasy.in/dam/products_otc/O60831/baygon-cockroach-killer-400ml-2-1645196555.jpg?dim=1440x0" alt="">
+                        <p >Baygon Cockroach Killer</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$215.00</p>
+                            </div>
+                            <div class="price">
+                                <p>$150.50</p>
+                                <p>30%OFF</p>
+                            </div>
+                        </a>
+                     </div>
+
+                     <div class="Category" >
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/A10622/vanish-all-in-one-liquid-detergent-booster-400-ml-removes-stains-whitens-whites-brightens-colors-2-1647421873.jpg?dim=1440x0" alt="">
+                        <p >Vanish All in One Liquid Detergent Booster</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$115</p>
+                            </div>
+                            <div class="price">
+                                <p>$102.30</p>
+                                <p>11%OFF</p>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="Category">
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/H33762/ducray-anaphase-plus-shampoo-100-ml-2-1652259541.jpg?dim=1440x0" alt="">
+                        <p >Ducray Anaphase Plus Shampoo</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$869.00</p>
+                            </div>
+                            <div class="price">
+                                <p>$660.44</p>
+                                <p>24%OFF</p>
+                            </div>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/Y57436/nivea-men-all-in-one-charcoal-facewash-50-gm-2-1654235989.jpg?dim=1440x0" alt="">
+                         <p >Ayurvedic care</p>
+                          <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$100</p>
+                            </div>
+                            <div class="price">
+                                <p>$85.00</p>
+                                <p>15%OFF</p>
+                            </div>
+                       </a>
+                      </div>
+
+                      <div class="Category">
+                          <a href="">
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/D62438/godrej-hit-flies-mosquitoes-lime-fresh-insect-killer-spray-400-ml-2-1641793715.jpg?dim=1440x0" alt="">
+                          <p >Godrej Hit Flies & Mosquito</p>
+                           <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$245</p>
+                            </div>
+                            <div class="price">
+                                <p>$225.30</p>
+                                <p>8%OFF</p>
+                            </div>
+                          </a>
+                       </div>
+
+                       <div class="Category">
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/Q33438/mortein-powergard-rat-kill-cake-100g-pack-2-1641793524.jpg?dim=1440x0" alt="">
+                        <p >Mortein Powergard Rat Kill Cake</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$64</p>
+                            </div>
+                            <div class="price">
+                                <p>$58.30</p>
+                                <p>8%OFF</p>
+                            </div>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/O98495/upglam-onion-oil-shampoo-2-1659342340.jpg?dim=1440x0" alt="">
+                         <p >Upglam Onion Oil Shampoo</p>
+                          <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$399</p>
+                            </div>
+                            <div class="price">
+                                <p>$299.30</p>
+                                <p>25%OFF</p>
+                            </div>
+                       </a>
+  
+                      </div>
+                        <div class="Category">
+                            <a href="">
+                                <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="">
+                            <p >Top products</p>
+                             <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$145</p>
+                            </div>
+                            <div class="price">
+                                <p>$136.30</p>
+                                <p>6%OFF</p>
+                            </div>
+                            </a>
+                         </div>
+            
+                  </section>
+             </div>
+          </div>
+
+          <div id="C">
+            <div>
+                <h1>Trending Near You</h1>
+                <h4>Popular in your city</h4>
+            </div>
+            <div id="A">
+                <section >
+                    <div class="Category" >
+                      <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1654168216.jpg?dim=1440x0" alt="">
+                         <p>Dr Morepen Gluco one Bg 03</p>
+                            <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$849</p>
+                            </div>
+                            <div class="price">
+                                <p>$645.30</p>
+                                <p>24%OFF</p>
+                            </div>
+                      </a>
+                    </div>
+
+                    <div class="Category">
+                      <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1654234653.jpg?dim=1440x0" alt="">
+                         <p >Everherb karela Jamun Juice</p>
+                       <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$399</p>
+                            </div>
+                            <div class="price">
+                                <p>$207.50</p>
+                                <p>48%OFF</p>
+                            </div>
+                     </a>
+                     
+
+                    </div>
+                    <div class="Category">
+                     <a href="">
+                        <img src="https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1654078168.jpg?dim=1440x0" alt="">
+                       <p >Calcimax Forte Plus strip</p>
+                            <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$270.50</p>
+                            </div>
+                            <div class="price">
+                                <p>$216.60</p>
+                                <p>20%OFF</p>
+                            </div>
+                     </a>
+
+                    </div>
+                    <div class="Category">
+                        <a href="">
+                            <img src="https://cdn01.pharmeasy.in/dam/products_otc/000591/abzorb-antifungal-dusting-powder-100gm-2-1656944432.jpg?dim=1440x0" alt="">
+                        <p >Abzorb Antifungal Powder</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$125.00</p>
+                            </div>
+                            <div class="price">
+                                <p>$102.50</p>
+                                <p>18%OFF</p>
+                            </div>
+                        </a>
+                     </div>
+
+                     <div class="Category" >
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/Q83701/pharmeasy-all-in-one-vaporizer-1-1654233812.jpg?dim=1440x0" alt="">
+                        <p >Pharmeasy All-in-one vape</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$559</p>
+                            </div>
+                            <div class="price">
+                                <p>$269.55</p>
+                                <p>55%OFF</p>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="Category">
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/Y63373/candid-dusting-powder-120-gm-2-1655118930.jpg?dim=1440x0" alt="">
+                        <p >Candid Dusting Powder</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$145.00</p>
+                            </div>
+                            <div class="price">
+                                <p>$123.44</p>
+                                <p>15%OFF</p>
+                            </div>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1656420891.jpg?dim=1440x0" alt="">
+                         <p >Liveasy Foods Healthy Seed</p>
+                          <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$349.00</p>
+                            </div>
+                            <div class="price">
+                                <p>$174.00</p>
+                                <p>50%OFF</p>
+                            </div>
+                       </a>
+                      </div>
+
+                      <div class="Category">
+                          <a href="">
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/I40164/durex-extra-dots-packet-of-10-condoms-3-1654166124.jpg?dim=1440x0" alt="">
+                          <p >Durex Extra Dots Condoms</p>
+                           <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$245</p>
+                            </div>
+                            <div class="price">
+                                <p>$208.30</p>
+                                <p>15%OFF</p>
+                            </div>
+                          </a>
+                       </div>
+
+                       <div class="Category">
+                        <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/031531/calcimax-500-health-supplement-tablets-500-mg-of-calcium-box-of-30-2-1654077366.jpg?dim=1440x0" alt="">
+                        <p >Calicimax 500 Health Supplemants</p>
+                         <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$380</p>
+                            </div>
+                            <div class="price">
+                                <p>$304.30</p>
+                                <p>20%OFF</p>
+                            </div>
+                      </a>
+                       
+  
+                      </div>
+                      <div class="Category">
+                       <a href="">
+                          <img src="https://cdn01.pharmeasy.in/dam/products_otc/O98495/upglam-onion-oil-shampoo-2-1659342340.jpg?dim=1440x0" alt="">
+                         <p >Upglam Onion Oil Shampoo</p>
+                          <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$399</p>
+                            </div>
+                            <div class="price">
+                                <p>$299.30</p>
+                                <p>25%OFF</p>
+                            </div>
+                       </a>
+  
+                      </div>
+                        <div class="Category">
+                            <a href="">
+                                <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f10917087a483040b557e4b18204312c.png?f=png?dim=256x0" alt="">
+                            <p >Top products</p>
+                             <div class="price">
+                                <p>MRP</p>
+                                <p class="cut">$145</p>
+                            </div>
+                            <div class="price">
+                                <p>$136.30</p>
+                                <p>6%OFF</p>
+                            </div>
+                            </a>
+                         </div>
+            
+                  </section>
+             </div>
+          </div>
+
+          <div id="E">
+            <div>
+                <h1>Lap Tests by Health Concern</h1>
+            </div>
+            <div>
+                <div>
+                      <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/e9fec637561-Vitamins.jpg?dim=256x0" alt="">
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/f055b8d7606-Fever_Infection.jpg?dim=256x0" alt="">
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/0108134f09b-Health_Checkups.jpg?dim=256x0" alt="">
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/686b12c5c64-Heart.jpg?dim=256x0" alt="">
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/6c5765fb3e7-Diabetes.jpg?dim=256x0" alt="">
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/453e093976a-thyroid.png?dim=256x0" alt="">
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/a0c71fca127-Rename.png?dim=256x0" alt="">
+                </div>
+            </div>
+
+          </div>
+
+          <div id="F">
+            <div>
+                <h1>Become a Plus Member</h1>
+                <p>And enjoy extra bachat on every order</p>
+            </div>
+
+            <div>
+                <div>
+                    <p>Save flat 5% extra on medicines & enjoy FREE delivery with PLUS membership</p>
+                </div>
+                <div>
+                    <button>Explore Now</button>
+                </div>
+            </div>
+            
+            <div>
+                <img src="https://assets.pharmeasy.in/apothecary/_next/static/media/PlusFamily.22677720.png?dim=1440x0" alt="">
+            </div>
+            
+          </div>
+
+          <div id="G">
+            <div>
+                <h1>Frequently Booked Lab Tests</h1>
+            </div>
+            <div>
+                <div>
+                       <a href="">
+                        <h2>Covid-19 RTPCR (Coronavirus SARS - CoV2)</h2>
+                        <p>The COVID-19 laboratory test can detect positive coronavirus cases</p>
+                        <h2>$700</h2>
+                       </a>
+                </div>
+                <div>
+                        <a href="">
+                            <h2>Comprehensive Full Body Check up with Vitamin D & B12</h2>
+                        <p>Measures Vitamin D & B12 levels and other essential parameters</p>
+                        <h2>$1499</h2>
+                        </a>
+                </div>
+                <div>
+                        <a href="">
+                            <h2>H3T Profile</h2>
+                        <p class="cut"> $1500</p>
+                        <h2>$700</h2>
+                        </a>
+                </div>
+                <div>
+                        <a href="">
+                            <h2>Vitamin D Total</h2>
+                        <p>Vitamin D levels in your body can be checked with this blood test</p>
+                        <h2>$549</h2>
+                        </a>
+                </div>
+            </div>
+          </div>
+
+            <div id="B">
+                <div>
+                   <h1>Offers Just for You</h1>
+                </div>
+                <div id="AB">
+                   <section >
+                       <div class="offer2" >
+                         <img src="https://cdn01.pharmeasy.in/dam/banner/banner/dfdcb534963-hsbc.jpg?dim=1440x0" alt="">
+                       </div>
+
+                       <div class="offer2">
+                         <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9466405c308-au.jpg?dim=1440x0" alt="">
+   
+                       </div>
+                       <div class="offer2">
+                         <img src="https://cdn01.pharmeasy.in/dam/banner/banner/0c5c9ec6841-mobikwik.jpg?dim=1440x0" alt="">
+   
+                       </div>
+
+                       <div class="offer2">
+                           <img src="https://cdn01.pharmeasy.in/dam/banner/banner/3c88b411e46-ola-money.jpg?dim=1440x0" alt="">
+                           
+                         </div>
+
+                         <div class="offer2">
+                           <img src="https://cdn01.pharmeasy.in/dam/banner/banner/b530ee057a3-freecharge.jpg?dim=1440x0" alt="">
+                    
+                         </div>
+
+                         <div class="offer2">
+                           <img src="https://cdn01.pharmeasy.in/dam/banner/banner/7297689b914-AIRTEL.jpg?dim=1440x0" alt="">
+                         </div>
+                       
+                     </section>
+                </div>
+             </div>
+          
+          
+       
+    </div>
+  
+
+</body>
+</html>
+
+<script>
+ let img= document.querySelector("#d>div>a>img");
+
+let buttons=document.querySelectorAll("#d>div>button");
+let imgnum=0;
+let imgarr=[
+    "https://cdn01.pharmeasy.in/dam/banner/banner/3c8837727b0-hp.jpg",
+    "https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg",
+    "https://cdn01.pharmeasy.in/dam/banner/banner/fb080c50a17-LabApp.jpg",
+    
+        ]
+
+
+
+buttons[1].addEventListener("click",
+function(){
+if(imgnum===imgarr.length-1)
+{
+    imgnum=0;
+}
+else
+{
+    imgnum++;
+}
+img.src=imgarr[imgnum];
+})
+
+//   let img = [
+//         "https://cms-contents.pharmeasy.in/banner/fcf06e6cf90-STAYHOMEDWEB.jpg?dim=1440x0&dpr=1.25&q=100",
+//         "https://cms-contents.pharmeasy.in/banner/3b30799ae78-COVIDFREE8JUNE.jpg?dim=1440x0&dpr=1.25&q=100",
+//         "https://cms-contents.pharmeasy.in/banner/fef1ef3c06a-DWEBCOVID.jpg?dim=1440x0&dpr=1.25&q=100",
+//       ]
+//       var i = -1
+//       setInterval(function () {
+//         i++
+//         if (i == img.length) {
+//           i = 0
+//         }
+//         let cont = document.getElementById("cont")
+//         cont.innerHTML = `<img src=${img[i]} alt="img${i}">`
+//       }, 2000)
+
+</script>
