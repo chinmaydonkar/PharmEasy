@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #whole{
+        height: 100%;
+        width: 100%;
+    }
+    #main_box{
+        display: flex;
+        border: 1px solid black;
+        height: 90%px;
+        width: 100%;
+    }
+    #product_box{
+        border: 1px solid rgb(236, 14, 14);
+        height: 100%;
+        width: 60%;
+    }
+    #coupon_box{
+        border: 1px solid blue;
+        height: 100%;
+        width: 40%;
+    }
+  #items{
+    border: 1px solid blue;
+    height: 100%;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  #coupon_data{
+    border: 1px solid blue;
+    height: 90%;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  #extraproducts{
+    display: flex;
+    justify-content: flex-start;
+    
+   
+  }
+  .ediv{
+    height: 150px;
+    width: 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.eimg{
+padding: 30px;
+}
+
+#extraproducts{
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+    /* border: 1px solid red; */
+}
+.extra{
+    width: 25%;
+    padding: 5px;
+    
+    justify-content: center;
+}
+.add{
+    
+    color:#10847e ;
+    border: 1px solid #10847e;
+    border-radius: 5px;
+    padding:0px 20px 10px 20px;
+    width:80px;
+    text-align: center;
+    height: 40px;
+}
+.addcolor{
+    color: #10847e;
+    margin-top: 15px;
+}
+ .change{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    /* margin-left: 30px;
+    background-color: rgb(216, 248, 248); */
+    
+ }  
+ #deliver{
+    margin-left: 30px;
+    background-color: rgb(241, 248, 248);
+    line-height: 0.01%;
+    padding: 10px;
+    
+    
+ } 
+
+.buycpn{
+    background-color: rgb(64, 160, 151);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 94.5%;
+    border: none;
+    text-align: center;
+    /* outline: none; */
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: rgb(60, 91, 56);
+    cursor: pointer;
+    padding: 20px;
+    width: 94.5%;
+    border: none;
+    text-align: center;
+    /* outline: none; */
+    font-size: 17px;
+    margin-left: 30px;
+    margin-top: 20px;
+   
+  } 
+
+  #offerbox{
+    border-radius: 10px;
+    background-color: rgb(133,115,225) ;
+    padding: 20px;
+    color: white;
+    width: 87%;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+}
+#save{
+    display: flex;
+    margin-left: 20px;
+}
+.hwhite{
+    color: white;
+}
+#plus{
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#sborder{
+    border: 1px dotted rgb(59,184,150);
+    border-radius: 5px;
+    background-color:rgb(242,255,248) ;
+    /* margin: 10px 0px; */
+    padding: 0px 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#saving{
+    display: flex;
+}
+#dlogo{
+    margin-top: 3px;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}
+#summary{
+    width: 94.2%;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+#box1 {
+      display: flex;
+      margin-left: 15%;
+      gap: 2%;
+    }
+    /*------------------------------------------- box1-1------------------------------------------ */
+    #box1-1>div {
+      border: 1px solid rgb(241, 241, 241);
+      border-radius: 7px;
+    }
+    #box1-1-1 {
+      display: flex;
+      gap: 38%;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+    }
+    #pincodediv {
+      border: 1px solid rgb(255, 0, 85);
+      border-radius: 5px;
+      font-size: 14px;
+      height: 15px;
+      margin-top: 10px;
+      padding: 10px;
+      color: rgb(255, 0, 85);
+    }
+    #box1-1-2 {
+      padding-left: 10px;
+      padding-right: 70px;
+    }
+    #box1-1-2>p {
+      font-size: 14px;
+      color: rgb(92, 92, 92);
+    }
+    #box1-1-2>p+h4 {
+      color: rgb(255, 0, 85);
+    }
+    #box1-1-3 {
+      display: flex;
+      gap: 20%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 10px;
+    }
+    #box1-1-3-2 {
+      display: flex;
+      color: rgb(92, 92, 92);
+      font-size: 14px;
+    }
+    #line {
+      background-color: gray;
+      height: 30px;
+      border: 0.5px solid rgb(241, 241, 241);
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #box1-1-5 {
+      padding: 10px;
+      margin-top: 20px;
+    }
+    /* ----------------------------------box1-2----------------------------- */
+    #box1-2 {
+      border-left: 1px solid rgb(241, 241, 241);
+      padding-left: 20px;
+    }
+    #box1-2-1 {
+      border-bottom: 1px solid rgb(241, 241, 241);
+    }
+    #box1-2-1>h5 {
+      color: rgb(92, 92, 92);
+    }
+    #box1-2-1>h4 {
+      color: rgb(255, 0, 85);
+    }
+    #box1-2-1-1 {
+      display: flex;
+      gap: 5%;
+      padding-top: 15px;
+    }
+    #box1-2-1-1>div {
+      border: 1px solid rgb(209, 208, 208);
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+    #box1-2-2-1 {
+      display: flex;
+      gap: 20%;
+      border-bottom: 1px solid rgb(241, 241, 241);
+      padding-bottom: 10px;
+      /* gap: 20%; */
+    }
+    #apply {
+      border: 1px solid rgb(255, 0, 85);
+      border-radius: 5px;
+      font-size: 14px;
+      padding: 5px 20px;
+      color: rgb(255, 0, 85);
+    }
+    #box1-2-3 {
+      color: rgb(92, 92, 92);
+      margin-left: 30px;
+      margin-top: 20px;
+      width: 90%;
+      margin-left: 40px;
+     
+      
+      /* border-bottom: 1px solid rgb(241, 241, 241); */
+    }
+    tr {
+      line-height: 25px;
+     
+      
+    }
+    tr>td:nth-child(2) {
+      text-align: center;
+      margin-left: 50px;
+    }
+    #tr>td{
+      border-top: 1px solid rgb(212, 211, 211);
+      
+      /* margin-top: 10px; */
+      /* margin-bottom: 20px; */
+    }
+    #totalamount{
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .linethrough {
+      text-decoration: line-through;
+    }
+    #box1-2-4-1 {
+      background-color: #f2faf9;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    #box1-2-4-2 {
+      background-color: #ff3f6c;
+      color: white;
+      text-align: center;
+      height: 30px;
+      padding-top: 15px;
+    }
+    #line2 {
+      border: 1px solid gray;
+      width: 950px;
+      margin: auto;
+      margin-top: 50px;
+    }
+    /* -------------------------------------------box2----------------------------------------- */
+    #box2 {
+      margin: auto;
+      margin-left: 15%;
+    }
+    #box2-1 {
+      display: flex;
+      gap: 10px;
+    }
+    #box2-1>div {
+      border: 1px solid rgb(209, 208, 208);
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+    #box2-1>div:nth-child(1) {
+      border: 1px solid #ff3f6c;
+      color: #ff3f6c;
+    }
+    #box2-2 {
+      display: flex;
+      gap: 3%;
+    }
+    #box2-2>div {
+      border: 1px solid rgb(209, 208, 208);
+      margin-top: 20px;
+    }
+    #box2-2>div>img {
+      border-bottom: 1px solid rgb(209, 208, 208);
+    }
+    .p1,
+    .p2>.linethrough {
+      color: rgb(128, 127, 127);
+      font-size: 14px;
+    }
+    .p2 {
+      font-size: 14px;
+    }
+    .pink {
+      color: rgb(255, 0, 85);
+    }
+    #box2-2>div>h5:nth-child(5) {
+      text-align: center;
+    }
+    .img {
+      width: 120px;
+      height: 150px;
+    }
+    .div1 {
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+      border: 1px solid rgb(209, 208, 208);
+    }
+    .green {
+      color: #14cda8;
+    }
+    #truck {
+      width: 30px;
+    }
+    #box1-2-2-1-1{
+      display: flex;
+    }
+    #priceDiv {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        /* text-align: center; */
+        padding-left: 10px;
+        flex-wrap: nowrap;
+      }
+      select{
+        background-color: rgb(241, 241, 241);
+        border: none;
+        margin-right: 10px;
+      }
+      #div3{
+        line-height: 1px;
+      }
+      #fas{
+        color: #14cda8;
+        font-weight: 600;
+      }
+      #discountMRP{
+        color: #14cda8;
+      }
+
+      #product_box{
+        display: block;
+      }
+
+
+#productss{
+    /* display: flex; */
+}
+
+#prodImage{
+    width: 40%;
+    height: 40%;
+    
+}
+#maindata{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    #data{
+       width: 30%;
+       margin-top: 30px;
+       margin-bottom: 30px
+    }
+
+    #data1{
+        /* border: 1px solid black; */
+        height: 20%;
+        margin: auto;
+        margin-left: 10px;
+    }
+    #data2{
+        width: 20%;
+        /* border: 1px solid yellowgreen; */
+        height: 30%;
+        margin: auto;
+        
+    }
+  
+    #data3{
+        width: 20%;
+        /* border: 1px solid yellowgreen; */
+        height: 30%;
+        margin: auto;
+    }
+    #data>prodImage{
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+     
+ 
+</style>
+
+<body>
+    <div id="whole">
+    <div id="main_box">
+       <div id="product_box">
+
+           <div id="productss">
+              
+           </div>
+         
+
+       </div>
+
+      
+       <div id="coupon_box">
+          <div id="coupon_data">
+             <div id="deliver">
+                <div class="change">
+                <h4>Deliver to Home</h4>
+                <h4>CHANGE</h4>
+            </div>
+                <h5>201006 fdh, yr, Delhi-3</h5>
+             </div>
+             <div id="apply_coupn">
+                <button type="button" class="collapsible">
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/90a09c2f.svg" alt="">
+                    Apply Coupon/ View Offers</div>
+                </button>
+             </div>
+             
+                <button type="button" class="buycpn" onclick="payment()">Proceed To Buy</button>
+               
+                
+                <div id="box1-2-3">
+                    <h3 id="totalitems">Order Summary</h3>
+                    <table>
+                      <tr>
+                        <td>Total MRP</td>
+                        <td id="totalMRP">₹</td>
+                      </tr>
+                      <tr>
+                        <td>Discount on MRP</td>
+                        <td id="discountMRP"><span class="green">-₹</span></td>
+                      </tr>
+                      <tr>
+                        <td>Packaging Charges</td>
+                        <td><span class="pink">FREE</span></td>
+                      </tr>
+                      <tr>
+                        <td>Delivery Charges <span class="pink"></span></td>
+                        <td>
+                          <div>
+                            <span class="linethrough">₹40</span>
+                            <span class="green">FREE</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr id="tr">
+                        <td>Total Amount</td>
+                       <td id="totalamount">₹0</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                <div id="sborder">
+                    <div id="saving">
+                        <img id="dlogo" src="https://thumbs.dreamstime.com/b/indian-rupees-symbol-gold-coin-indian-rupees-currency-symbol-gold-coin-money-sign-vector-illustration-isolated-white-99276610.jpg" alt="">
+                        <p id="totalsave">Total saving of 5 % on this order</p>
+                    </div>
+                    <p>MRP Discount 30%</p>
+                    <p>Delivery Charges Waive</p>
+                    <p>Other Charges Waiver</p>
+                </div>
+
+                <div id="offerbox">
+                    <div id="save"><h4 class="hwhite">Save Rs 145.89 More On This Order</h4> <img id="plus" src="https://assets.pharmeasy.in/web-assets/dist/f1f4bdf9.svg" alt=""></div>
+                    <ul>
+                        <li>5% cash back on all orders</li>
+                        <li>10% cash back on all diaglonies orders</li>
+                        <li> FREE delivery on orders</li>
+                        <li> ZERO convenience change</li>
+                        <br>
+                        <p>View More Benefits > </p>
+                    </ul>
+                </div>
+
+
+          </div>
+       
+          
+    </div>
+
+       </div>
+
+
+    
+    </div>
+
+    <h3>Customers who bought above items also bought</h3>
+
+    <div id="extraproducts">
+        <div class="extra">
+            <div class="ediv">
+            <img class="eimg" src="https://cdn01.pharmeasy.in/dam/products_otc/W89200/volini-joint-xpert-20-gm-gel-2-1641790476.jpg?dim=100x0&dpr=0.3333333432674408&q=100" alt="">
+        </div>
+            <h4>Volini joint xpert 20Gm Gel in tube</h4>
+            <p>20g Gel in tube</p>
+            <h4>MRP <strike>₹99</strike> </h4>
+            <h3>₹75</h3>
+            <div class="add">
+                <h3 class="addcolor">Add</h3>
+            </div>
+        
+        </div>
+        <div class="extra">
+            <div class="ediv">
+            <img class="eimg" src="https://cdn01.pharmeasy.in/dam/products_otc/F05498/hansaplast-crepe-bandage-6-cm-x-400-cm-2-1641788757.jpg?dim=100x0&dpr=0.3333333432674408&q=100" alt="">
+        </div>
+            <h4>Hansaplast Crepe Bandage 6 Cm per strip</h4>
+            <p>Bandage</p>
+            <h4>MRP <strike>₹209</strike> </h4>
+            <h3>₹83</h3>
+            <div class="add">
+                <h3 class="addcolor">Add</h3>
+            </div>
+        
+        </div>
+        <div class="extra">
+            <div class="ediv">
+            <img class="eimg" src="https://cdn01.pharmeasy.in/dam/products_otc/I35531/volini-maxx-pain-relief-spray-bottle-of-55-g-2-1641788080.jpg?dim=100x0&dpr=0.3333333432674408&q=100" alt="">
+            </div>
+            <h4>Voline macc Pain Relief Spray-20mg</h4>
+            <p>55g Spray in Bottle</p>
+            <h4>MRP <strike>₹199</strike> </h4>
+            <h3>₹143</h3>
+            <div class="add">
+                <h3 class="addcolor">Add</h3>
+            </div>
+        
+        </div>
+        <div class="extra">
+            <div class="ediv">
+            <img class="eimg" src="https://cdn01.pharmeasy.in/dam/products_otc/116755/moov-pain-relief-cream-for-back-pain-muscle-pain-joint-pain-15g-100-ayurvedic-formula-2-1641398757.jpg?dim=100x0&dpr=0.3333333432674408&q=100" alt="">
+        </div>
+            <h4>Moov Instant Pain Relief Cream -20gm</h4>
+            <p>15g Gel in Tube</p>
+            <h4>MRP <strike>75</strike> </h4>
+            <h3>₹60</h3>
+            <div class="add">
+                <h3 class="addcolor">Add</h3>
+            </div>
+        
+        </div>
+        <div class="extra">
+            <div class="ediv">
+            <img class="eimg" src="https://cdn01.pharmeasy.in/dam/products_otc/I40046/vicks-inhaler-keychain-pack-of-1-2-1654166287.jpg?dim=100x0&dpr=1.25&q=100" alt="">
+        </div>
+            <h4>Vicks Inhailor Keychain Pack-15gm</h4>
+            <p>1 Inhailor in Bottle</p>
+            <h4>MRP <strike>59</strike> </h4>
+            <h3>₹56</h3>
+            <div class="add">
+                <h3 class="addcolor">Add</h3>
+            </div>
+        
+        </div>
+        <div class="extra">
+            <div class="ediv">
+            <img class="eimg" src="https://cdn01.pharmeasy.in/dam/products_otc/R47602/saridon-advance-for-severe-headache-relief-tablet-10-tablets-2-1652337285.jpg?dim=100x0&dpr=1.25&q=100" alt="">
+        </div>
+            <h4>Saridon Advance Pain Relief Spray-10gm</h4>
+            <p>15g Gel in Tube</p>
+            <h4>MRP <strike>175</strike> </h4>
+            <h3>₹90</h3>
+            <div class="add">
+                <h3 class="addcolor">Add</h3>
+            </div>
+        
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+<script>
+
+var cart = JSON.parse(localStorage.getItem("cart")) || [] ;
+
+displayProducts(cart)
+
+
+function displayProducts(DataDisplayed) {
+
+    productss.innerHTML=null;
+
+DataDisplayed.forEach(function(elem,index){
+
+    var maincard=document.createElement("div");
+    maincard.setAttribute("id" ,"maindata")
+
+    var card=document.createElement("div");
+    card.setAttribute("id" ,"data")
+
+
+        var productVisual = document.createElement("img");
+        productVisual.setAttribute("id","prodImage");
+        productVisual.src = elem.image_url;
+
+        var card1=document.createElement("div");
+       card1.setAttribute("id" ,"data1")
+
+
+        var productDesc = document.createElement("p");
+        productDesc.setAttribute("id","prodDesc");
+        productDesc.innerText = elem.info;
+
+        var card3=document.createElement("div");
+    card3.setAttribute("id" ,"data3")
+
+        var productAmount = document.createElement("p");
+        productAmount.setAttribute("id","prodAmt");
+        productAmount.innerText = elem.price;
+
+        var card2=document.createElement("div");
+    card2.setAttribute("id" ,"data2")
+
+    var button=document.createElement("button");
+    button.innerText="Delete"
+    button.style.color="white";
+    button.style.backgroundColor="grey"
+    button.style.width="90px"
+    button.style.height="30px"
+    
+    
+    button.style.cursor="pointer"
+    button.addEventListener("click",function(){
+        deleteItem(elem,index);
+    })
+
+
+
+        
+    card.append(productVisual);
+    card1.append(productDesc);
+    card3.append(productAmount);
+    card2.append(button);
+    maincard.append(card,card1,card3,card2)
+
+        document.querySelector("#productss").append(maincard);
+        console.log(maincard)
+    });
+
+}
+
+
+function  deleteItem(elem,index){
+     cart.splice(index,1);
+        localStorage.setItem("cart",JSON.stringify(cart));
+      window.location.reload();
+ }
+
+
+    function payment(){
+        window.location.href="payment.html"
+    }
+
+    var total =cart.reduce(function (acc,cv){
+        return acc+Number(cv.price)
+    },0)
+    console.log(total)
+    document.querySelector("#totalMRP").innerHTML=` ${total}`
+    document.querySelector("#totalamount").innerHTML=` ${total}`
+
+</script>
