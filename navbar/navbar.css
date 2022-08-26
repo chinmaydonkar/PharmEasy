@@ -4,7 +4,7 @@
 }
 
 .navbar{
-    padding: 10px 10px;
+    padding: 10px 30px;
     /* border: 1px solid;    */
     height: 50px;
     display: flex;
@@ -21,25 +21,31 @@
     height: 50px;
 }
 .searchbox{
-    /* border: 1px solid; */
+    border: 0.5px solid rgb(189, 186, 186);
     display: flex;
     align-items: center;
+    height: 50px;
+    width: 45%;
+    border-radius: 30px;
 }
 
 #searchBar{
-    border:1px solid gray;
+    border:0px solid;
     font-size: 18px;
-    padding-left: 20px;
+    margin-left: 20px;
+    height: 90%;
 }
 .searchbox button{
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
+    width: 100px;
+    height: 90%;
     font-size: 18px;
     font-weight: 500;
     background-color: #10847E;
     color: white;
     border: transparent;
-    border-radius: 10px;
-    margin-left: 5px;
+    border-radius: 30px;
+    margin-right: 3px;
 }
 .navbar div:nth-child(1){
     display: flex;

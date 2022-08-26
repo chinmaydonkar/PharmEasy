@@ -7,7 +7,7 @@ let navbar = () =>{
             </div>
                 <hr>
             <div class="nav_add">
-                <i class="fa-solid fa-bolt-lightning"></i>
+                <i class="fa-solid fa-bolt-lightning" style="color:rgb(253,195,46)";></i>
                 <p>Express Delivery</p>
                 <!-- <h5>Select Pincode</h5> -->
             </div>
