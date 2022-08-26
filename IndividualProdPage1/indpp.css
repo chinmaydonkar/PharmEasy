@@ -1,0 +1,119 @@
+#img_flex{
+    display: flex;
+    margin-left: -12px;
+}
+#box_ind{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid transparent;
+    width: 75%;
+}
+#img_flex>img{
+    border: 1px solid silver;
+    margin-left: 5px;
+    height: 90px;
+}
+#box_img>img{
+    border: 1px solid silver;
+    height: 250px;
+    width: 100%;
+}
+#a{
+    display: flex;
+    justify-content: space-between;
+}
+#cart_btn{
+    width: 120px;
+    height: 40px;
+    background-color: #10847e;
+    color: white;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+#b{
+    display: flex;
+    justify-content: space-between;
+}
+#b>div:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #4f585e;
+}
+#b>s{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8897a2;
+    margin-top: 4px;
+}
+#arrow{
+    margin-left: 60px;
+    margin-bottom: 27px;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4f585e;
+    font-weight: 400;
+}
+#desc>p:first-child{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #4f585e;
+    width: 70%;
+}
+#desc>p:nth-child(2){
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #10847e;
+}
+#c{
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 13px;
+    font-size: 10px;
+    color: #8897a2;
+}
+#d{
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #4f585e;
+}
+#d>span{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4f585e;
+}
+#desc{
+    width: 50%;
+}
+#cart_desc>p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4f585e;
+}
+#cart_desc>button{
+    background-color: #959595;
+    color: white;
+    height: 40px;
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
