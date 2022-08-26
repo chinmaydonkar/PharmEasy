@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <div id="img-div">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="" style="background-color: #10847E;">'
+    </div>
+    
+    <div id="account-container" style="border: 2px solid #10847E;">
+        
+        <div id="register-form">
+            <div id="head-sign-up">
+              <div class="user-sign-in" id="switch-bar" onclick="Click('signIn')"><p>Sign in</p></div>
+              <div class="user-create-account" id="switch-bar" onclick="Click('signUp')"><p>Create Account</p></div>
+            </div>
+             <div class="form-inner">
+                 <!-- <----- Sign In Form start------->
+                <form action="#" class="login">
+                   <div class="field">
+                      <input type="text" id="user-input" class="user-login-email" placeholder="*Email Address" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" id="user-input" class="user-login-pass" placeholder="*Password" required>
+                   </div>
+                   <div  id="user-remember-me"><input type="checkbox" class="Remember-me"><label>Remember me</label></div>
+                   <div class="field btn">
+                      <div class="btn-layer"></div>
+                      <input type="submit" value="SIGN IN" id="check-btn">
+                   </div>
+                   <div class="pass-link">
+                    <a href="#">Forgot Password?</a>
+                   </div>
+                </form>
+                <!-- <----- Sign In Form end------->
+
+
+                <!------ Create Account Form start------->
+
+                <form action="#" class="signup">
+                    <div class="field" id="user-name-box">
+                        <input type="text" id="user-sign-input" class="userName" placeholder="*First Name" required>
+                        <input type="text" id="user-sign-input" placeholder="*Last Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="user-signup-input" class="user-email" placeholder="*Email Address" required>
+                    </div>
+                   <div class="field">
+                      <input type="text" id="user-signup-input" placeholder="*Confirm Email Address" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" id="user-signup-input" class="user-pass" placeholder="*Password (8 - 255 characters)" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" id="user-signup-input" placeholder="*Confirm Password">
+                   </div>
+                   
+                    <div id="pharm-policy">
+                        <p>
+                            By clicking Register, you agree with our <a href="https://pharmeasy.in/legal/privacy-policy">Privacy Policy.</a>
+                        </p>
+                    </div>
+                   <div class="field btn">
+                      <div class="btn-layer"></div>
+                      <input type="submit" value="REGISTER" id="check-btn">
+                   </div>
+                </form>
+            </div>
+        </div>
+</div> 
+</body>
+</html>
+<script src="./signup.js"></script>
