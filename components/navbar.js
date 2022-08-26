@@ -20,7 +20,7 @@ let navbar = () =>{
                 <h3>Download App</h3>
             </div> -->
             <div>
-                <a href="">Hello,Log In</a>
+                <a href="" id="user-details">Hello,Log In</a>
             </div>
             <div>
                <span><i class="fa-solid fa-percent"></i></span><a href="">Offers</a>
