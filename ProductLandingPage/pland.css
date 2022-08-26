@@ -1,5 +1,5 @@
 body{
-    color: white;
+    color: #ffffff;
   }
   /* Slider CSS */
   *{
@@ -14,10 +14,6 @@ body{
       to{
         opacity:1;
       }
-    }
-    
-    body{
-      background: #eee;
     }
     
     #slider{
@@ -173,7 +169,8 @@ body{
   #flex_box{
     display: flex;
     width: 70%;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 300px;
   }
   #flex_box>div{
     width: 55%;
@@ -198,3 +195,18 @@ body{
   }
   /* Flex box */
   
+  
+  
+  /* Media Query */
+  @media all and (min-width:251px) and (max-width:450px){
+    .products{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(11,1fr);
+   }
+  }
+  @media all and (min-width:30px) and (max-width:250px){
+    .products{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(16,1fr);
+   }
+  }

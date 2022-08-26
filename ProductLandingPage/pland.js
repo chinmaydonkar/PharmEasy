@@ -27,3 +27,8 @@ function changeSlide(){
 }
 
 changeSlide();
+
+
+let redirectToCE = document.querySelector("#touch").addEventListener("click",function(){
+  window.location.href = "../Prod/prod.html";
+});
