@@ -9,14 +9,107 @@
 </head>
 <body>
     
+    <div id="up">
+       
+        <div id="topright">
+            <div id="sortid">
+                <label for="">Sort by:</label>
+               
+               
+    
+                <select id="sortPrice" onChange="handlePriceSort()">
+                  <option value="nil">Sort By Price</option>
+                  <option value="HTL">High to Low</option>
+                  <option value="LTH">Low to High</option>
+                </select>
+            
+            </div>
+           
+        </div>
+       
+    </div>
+
     <div id="page_conatiner">
+
         <section id="sort_filter_box">
 
+           
+            <div>
+                <p id="cat">Category</p>
+                <div id="radio_cat">
+                    <p>Covid Essentials</p>
+                    
+                </div>
+            </div>
+
+            <hr id="radio_cat_line">
+          
+
+           
+            <div>
+                <p id="cat">Sub category</p>
+                <div id="radio2">
+                    <p>Medical </p>
+                    <input type="checkbox" class="cate" id="ts" value="Medical">
+                </div>
+
+
+
+                
+                <div id="radio1">
+                    <p>Home Hygiene Essentials</p>
+                    <input type="radio">
+                </div>
+              
+                <div id="radio3">
+                    <p>Health Supplements</p>
+                    <input type="radio">
+                </div>
+                <div id="radio4">
+                    <p>Masks & Gloves</p>
+                    <input type="radio">
+                </div>
+                <div id="radio5">
+                    <p>Pills</p>
+                    <input type="radio">
+                </div>
+            </div>
+            <hr id="radio_cat_line">
+           
+
+           
+            <div>
+                <p id="cat">Price</p>
+                <div id="check1">
+                    <p>Below 99</p>
+                    <input type="checkbox" class="check" id="roadster" value="Roadster">
+                </div>
+                <div id="check2">
+                    <p>99 - 999</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div id="check3">
+                    <p>999 - 1999</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div id="check4">
+                    <p>Above 1999</p>
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+
+            <hr id="radio_cat_line">
+           
+
         </section>
+
         <aside id="covid_prod">
             
         </aside>
     </div>
+
+
+   
 
     <script src="./prod.js"></script>
 </body>

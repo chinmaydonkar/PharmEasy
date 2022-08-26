@@ -7,28 +7,146 @@
     <title>Document</title>
 </head>
 <style>
+
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.navbar{
+    padding: 10px 30px;
+    /* border: 1px solid;    */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .navbar div:first-child{
+    border: 1px solid red;
+} */
+.navbar>div>input{
+    width: 500px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 50px;
+}
+.searchbox{
+    border: 0.5px solid rgb(189, 186, 186);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 45%;
+    border-radius: 30px;
+}
+
+#searchBar{
+    border:0px solid;
+    font-size: 18px;
+    margin-left: 20px;
+    height: 90%;
+}
+.searchbox button{
+    /* padding: 15px 30px; */
+    width: 100px;
+    height: 90%;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #10847E;
+    color: white;
+    border: transparent;
+    border-radius: 30px;
+    margin-right: 3px;
+}
+.navbar div:nth-child(1){
+    display: flex;
+    height: 100%;
+}
+.navbar div:nth-child(1) > img{
+    width: 150px;
+    height: 80%;
+}
+.nav_add{
+    /* border: 1px solid blue; */
+    height: 100%;
+}
+.nav_add {
+    display: flex;
+    align-items: center;
+}
+.nav_add i{
+    color: #FDC32E;
+    padding: 0 5px;
+}
+.nav_add p{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px 5px;
+}
+.navbar hr{
+    display: inline;
+    margin: 10px 20px;
+    background-color: grey;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.navbar i{
+    color: black;
+    padding: 0 10px;
+}
+.sub_nav{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 100px;
+    background-color: #EEF4FF;
+}
+.sub_nav a{
+    text-decoration: none;
+    color: black;
+}
+.sub_nav a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+
+
+
     #whole{
+      border: 1px solid black;
         height: 100%;
         width: 100%;
     }
     #main_box{
         display: flex;
-        border: 1px solid black;
-        height: 90%px;
-        width: 100%;
+        /* border: 1px solid black; */
+        height: 90%;
+        width: 90%;
+        margin-left: 90px;
     }
     #product_box{
-        border: 1px solid rgb(236, 14, 14);
+        /* border: 1px solid rgb(236, 14, 14); */
         height: 100%;
-        width: 60%;
+        width: 99%;
+        margin-top: 25px;
     }
     #coupon_box{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         height: 100%;
         width: 40%;
     }
   #items{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 100%;
     width: 90%;
     margin-left: 10px;
@@ -36,11 +154,14 @@
   }
 
   #coupon_data{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 90%;
     width: 90%;
     margin-left: 10px;
     margin-top: 20px;
+  }
+  #itemsselected{
+    margin-left: 60px;
   }
 
   #extraproducts{
@@ -64,7 +185,7 @@ padding: 30px;
 
 #extraproducts{
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-left: 50px;
     /* border: 1px solid red; */
 }
@@ -118,6 +239,9 @@ padding: 30px;
     margin-left: 30px;
     margin-top: 20px;
 }
+.buycpn:hover{
+  background-color: #466071;
+}
 
 .collapsible {
     background-color: #eee;
@@ -133,13 +257,16 @@ padding: 30px;
     margin-top: 20px;
    
   } 
+  .collapsible:hover{
+    background-color: rgb(173, 160, 160);
+  }
 
   #offerbox{
     border-radius: 10px;
     background-color: rgb(133,115,225) ;
     padding: 20px;
     color: white;
-    width: 87%;
+    width:auto;
     margin-left: 30px;
     margin-top: 20px;
     
@@ -429,13 +556,12 @@ padding: 30px;
       }
 
 
-#productss{
-    /* display: flex; */
-}
+
 
 #prodImage{
-    width: 40%;
-    height: 40%;
+  margin-top: 20px;
+    width: 60%;
+    height: 60%;
     
 }
 #maindata{
@@ -443,11 +569,15 @@ padding: 30px;
         justify-content: space-between;
         height: auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     #data{
        width: 30%;
        margin-top: 30px;
-       margin-bottom: 30px
+       margin-bottom: 30px;
+       margin-left: 5%;
+       /* margin-right: 10%; */
     }
 
     #data1{
@@ -457,7 +587,7 @@ padding: 30px;
         margin-left: 10px;
     }
     #data2{
-        width: 20%;
+        width: 15%;
         /* border: 1px solid yellowgreen; */
         height: 30%;
         margin: auto;
@@ -465,7 +595,9 @@ padding: 30px;
     }
   
     #data3{
-        width: 20%;
+      /* margin-left: 10px; */
+      display: block;
+        width: 15%;
         /* border: 1px solid yellowgreen; */
         height: 30%;
         margin: auto;
@@ -477,11 +609,136 @@ padding: 30px;
 
 
 
+
+    #btn {
+     margin-right: 40px;
+     margin-top: 70%;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #abacad;
+  border-radius: 10px;
+  background-color: white;
+  height: 30px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#innerDiv {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+#btnSelect {
+  border: none;
+}
+
+#dropdownDiv {
+  
+  border: none;
+}
+
+#btnTextDiv {
+  margin-right: 10px;
+  color: #4f585e;
+}
+
+#expressdly {
+  font-size: 18px;
+  color: #4f585e;
+}
+
+span {
+  font-weight: 600;
+}
+
+.wishhead{
+  margin-left: 100px;
+}
+
+
+.footer_container{
+  background-color: rgb(237, 243, 245);
+  margin-top: 20%;
+}
+
+.foot-top{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.foot-top li,ul{
+    list-style: none;
+}
+.foot-top ul :hover{
+   color:gray;
+   cursor: pointer;
+}
+.foot-end{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-end img{
+    margin: 10px 20px;
+    height: 20px;
+}
+
      
  
 </style>
 
 <body>
+
+
+  <div class="navbar_container">
+    <div class="navbar">
+        <div>
+        <div><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
+        </div>
+            <hr>
+        <div class="nav_add">
+            <i class="fa-solid fa-bolt-lightning" style="color:rgb(253,195,46)";></i>
+            <p>Express Delivery</p>
+            <!-- <h5>Select Pincode</h5> -->
+        </div>
+        </div>
+        <div class="searchbox">
+            <input type="text" name="" id="searchBar" placeholder="Search For">
+            <button>Search</button>
+        </div>
+        <!-- <div>
+            <h3>Download App</h3>
+        </div> -->
+        <div>
+            <a href="">Hello,Log In</a>
+        </div>
+        <div>
+           <span><i class="fa-solid fa-percent"></i></span><a href="">Offers</a>
+        </div>
+        <div>
+            <span><i class="fa-solid fa-cart-shopping"></i></span><a href="">Cart</a>
+        </div>
+    </div>
+
+<div class="sub_nav">
+    <div><a href="">Medicine</a></div>
+    <div><a href="">Lab Test</a></div>
+    <div><a href="">Healthcare</a></div>
+    <div><a href="">Health Blogs</a></div>
+    <div><a href="">PLUS</a></div>
+    <div><a href="">Offers</a></div>
+    <div><a href="">Surgeries</a></div>
+    <div><a href="">Value Store</a></div>
+</div>
+</div>
+
+   
+          
+        <!-- <h1>  <span id="itemsselected">Total Items in Cart</span></h1> -->
+        <h1 class="wishhead"> <span class="wishcount"> </span>Items In Cart </h1>
+       
+      
     <div id="whole">
     <div id="main_box">
        <div id="product_box">
@@ -664,6 +921,98 @@ padding: 30px;
 </div>
 </div>
 </div>
+
+
+<!-- <h3>-----------------------------------Footer start</h3> -->
+<div class="footer_container">
+  <div class="foot-top">
+  <div class="foot_col1">
+      <ul>
+          <span style="font-size: 20px;font-weight: 600;"><li>Company</li></span>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>Partner with PharmEasy</li>
+          <li>Sell at PharmEasy</li>
+          <br>
+          <span style="font-size: 20px;font-weight: 600;"><li>Our Services</li></span>
+          <li>Order Medicine</li>
+          <li>Healthcare Products</li>
+          <li>Lab Tests</li>
+      </ul>
+  </div>
+  <div class="foot_col2">
+      <ul>
+          <span style="font-size: 20px;font-weight: 600;"><li>Featured Categories</li></span>
+          <li>Covid Essentials</li>
+          <li>Personal Care</li>
+          <li>Health Food and Drinks</li>
+          <li>Beauty</li>
+          <li>Skin Care</li>
+          <li>Home Care</li>
+          <li>Ayurvedic Care</li>
+          <li>Sexual Wellness</li>
+          <li>Fitness Supplements</li>
+          <li>Mother and Baby Care</li>
+          <li>Healthcare Devices</li>
+          <li>Health Condition</li>
+          <li>Diabetic Care</li>
+          <li>Elderly Care</li>
+          <li>Accessories And Wearables</li>
+          <li>Top Products</li>
+      </ul>
+  </div>
+  <div class="foot_col3">
+      <ul>
+          <span style="font-size: 20px;font-weight: 600;"><li>Need Help</li></span>
+          <li>Browse All Medicines</li>
+          <li>Browse All Molecules</li>
+          <li>Browse All Cities</li>
+          <li>Browse All Areas</li>
+          <li>Browse All Stores</li>
+          <li>FAQs</li>
+          <br>
+          <span style="font-size: 20px;font-weight: 600;"><li>Policy Info</li></span>
+          <li>Editorial Policy</li>
+          <li>Privacy Policy</li>
+          <li>Vulnerability Disclosure Policy</li>
+          <li>Terms and Condition</li>
+          <li>Customer Support Policy</li>
+          <li>Return Policy</li>
+      </ul>
+  </div>
+  <div class="foot_col3">
+      <ul>
+          <span style="font-size: 20px;font-weight: 600;"><li>Follow us on</li></span>
+          <br>
+          <li>
+              <img src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=32x0" alt="">
+              <img src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=32x0" alt="">
+              <img src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=32x0" alt="">
+              <img src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=32x0" alt="">
+          </li>
+      </ul>
+  </div>
+</div>
+<div>
+  <p style="margin-left: 20px; font-weight: 600;font-size: 18px;">Our Payment Partners</>
+  <div class="foot-end">
+      <div> <img src="https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1440x0" alt="Gpay">
+          <img src="https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1440x0" alt="Paytm">
+          <img src="https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1440x0" alt="PhonePe">
+          <img src="https://assets.pharmeasy.in/apothecary/images/amazon.png?dim=1440x0" alt="AmazonPay">
+          <img src="https://assets.pharmeasy.in/apothecary/images/mobikwik.png?dim=1440x0" alt="Mobikwik">
+          <img src="https://assets.pharmeasy.in/apothecary/images/olamoney.png?dim=1440x0" alt="Olamoney">
+          <img src="https://assets.pharmeasy.in/apothecary/images/maestro.png?dim=1440x0" alt="maestro">
+          <img src="https://assets.pharmeasy.in/apothecary/images/mastercard.png?dim=1440x0" alt="mastercard">
+          <img src="https://assets.pharmeasy.in/apothecary/images/visa.png?dim=1440x0" alt="Visa">
+          <img src="https://assets.pharmeasy.in/apothecary/images/rupay.png?dim=1440x0" alt="rupay">
+      </div>
+      <div><p>© 2022 PharmEasy. All Rights Reserved</p></div>
+  </div>
+</div>
+</div>
+
+
 </body>
 </html>
 
@@ -671,6 +1020,9 @@ padding: 30px;
 <script>
 
 var cart = JSON.parse(localStorage.getItem("cart")) || [] ;
+
+let itemcount = cart.length;
+    document.querySelector(".wishcount").innerText = ` ${itemcount} `
 
 displayProducts(cart)
 
@@ -687,12 +1039,53 @@ DataDisplayed.forEach(function(elem,index){
     var card=document.createElement("div");
     card.setAttribute("id" ,"data")
 
-
-        var productVisual = document.createElement("img");
+       var productVisual = document.createElement("img");
         productVisual.setAttribute("id","prodImage");
         productVisual.src = elem.image_url;
 
-        var card1=document.createElement("div");
+        var cardqty=document.createElement("div");
+    cardqty.setAttribute("id" ,"dataqty")
+
+    
+    var qtybtn = document.createElement("button");
+        qtybtn.setAttribute("id", "btn");
+
+        var innerDiv = document.createElement("div");
+        innerDiv.setAttribute("id", "innerDiv");
+
+        var btnTextDiv = document.createElement("div");
+        btnTextDiv.setAttribute("id", "btnTextDiv");
+        btnTextDiv.innerText = "Qty";
+
+        var dropdownDiv = document.createElement("div");
+        dropdownDiv.setAttribute("id", "dropdownDiv");
+
+        var btnSelect = document.createElement("select");
+        btnSelect.setAttribute("id", "btnSelect");
+
+        for (var i = 1; i < 5; i++) {
+            var btnOption = document.createElement("option");
+            btnOption.setAttribute("value", i);
+            var t = document.createTextNode(i);
+            btnOption.appendChild(t);
+            btnSelect.append(btnOption);
+        }
+
+        btnSelect.addEventListener("change", function () {
+            item.qty = btnSelect.value;
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+            //dropdownDiv.value = item.qty;
+            displayProducts(cart);
+
+        })
+
+        dropdownDiv.append(btnSelect);
+        innerDiv.append(btnTextDiv, dropdownDiv);
+        qtybtn.append(innerDiv);
+
+
+    var card1=document.createElement("div");
        card1.setAttribute("id" ,"data1")
 
 
@@ -700,24 +1093,36 @@ DataDisplayed.forEach(function(elem,index){
         productDesc.setAttribute("id","prodDesc");
         productDesc.innerText = elem.info;
 
-        var card3=document.createElement("div");
+     var card3=document.createElement("div");
     card3.setAttribute("id" ,"data3")
 
         var productAmount = document.createElement("p");
         productAmount.setAttribute("id","prodAmt");
         productAmount.innerText = elem.price;
 
-        var card2=document.createElement("div");
+        // var priceDiv = document.createElement('div');
+        // priceDiv.setAttribute("id","priceDiv");
+
+        var strikedPrice = document.createElement('s');
+        strikedPrice.innerText = elem.cut;
+
+        var discountPrice = document.createElement('span');
+        discountPrice.innerText = elem.dis;
+
+        // var expressdly = document.createElement("div");
+        // expressdly.setAttribute("id", "expressdly");
+        // expressdly.innerHTML = "Express Delivery <span>Today, before 8 pm</span>";
+
+    var card2=document.createElement("div");
     card2.setAttribute("id" ,"data2")
 
     var button=document.createElement("button");
     button.innerText="Delete"
     button.style.color="white";
-    button.style.backgroundColor="grey"
-    button.style.width="90px"
-    button.style.height="30px"
-    
-    
+    button.style.backgroundColor="red"
+    button.style.width="50px"
+    button.style.height="20px"
+   button.style.borderRadius="5px"
     button.style.cursor="pointer"
     button.addEventListener("click",function(){
         deleteItem(elem,index);
@@ -727,10 +1132,11 @@ DataDisplayed.forEach(function(elem,index){
 
         
     card.append(productVisual);
+    cardqty.append(qtybtn);
     card1.append(productDesc);
-    card3.append(productAmount);
+    card3.append(productAmount, strikedPrice,discountPrice);
     card2.append(button);
-    maincard.append(card,card1,card3,card2)
+    maincard.append(card,cardqty,card1,card3,card2)
 
         document.querySelector("#productss").append(maincard);
         console.log(maincard)
@@ -739,11 +1145,14 @@ DataDisplayed.forEach(function(elem,index){
 }
 
 
+
 function  deleteItem(elem,index){
      cart.splice(index,1);
         localStorage.setItem("cart",JSON.stringify(cart));
       window.location.reload();
  }
+
+
 
 
     function payment(){
@@ -756,5 +1165,7 @@ function  deleteItem(elem,index){
     console.log(total)
     document.querySelector("#totalMRP").innerHTML=` ${total}`
     document.querySelector("#totalamount").innerHTML=` ${total}`
+
+   
 
 </script>
