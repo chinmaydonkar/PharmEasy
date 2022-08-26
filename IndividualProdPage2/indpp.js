@@ -83,9 +83,6 @@ function displayData(data){
         let anotherBtn = document.createElement('button');
         anotherBtn.innerText = "Add to Cart";
         anotherBtn.setAttribute("id","newBtn");
-        anotherBtn.addEventListener("click",function(){
-            addToCart(ele);
-        });
 
         divOne.append(imageOne,imageInfo,imageDesc,striked,price,anotherBtn);
         appendOne.append(divOne);
@@ -93,15 +90,6 @@ function displayData(data){
 }
 
 displayData(similarProductsObj);
-
-// ----------------------------------------------------------------------
-
-function addToCart(elem){
-    cart.push(elem);
-    localStorage.setItem("cart",JSON.stringify(cart));
-    alert("Added to Cart");
-    console.log("jhcdxbchjadnd");
-  }
 
 // ----------------------------------------------------------------------
 
