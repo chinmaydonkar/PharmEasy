@@ -42,7 +42,7 @@
     #register-form{ 
         width: 150%;
     }
-    #check-btn{
+    #check-btn-1,#check-btn-2{
         background-color: #10847E;
         color: white;
         height: 55px;
@@ -85,7 +85,7 @@
 #switch-bar:hover{
     cursor: pointer;
 }
-#check-btn{
+#check-btn-1,#check-btn-2{
     background-color: #10847E;
     color: white;
     height: 40px;
@@ -113,7 +113,7 @@
 .user-sign-in{
     border-bottom: 3px solid #10847E;
 }
-#user-input{
+#user-input-1,#user-input-2{
     /* outline: none; */
     height:40px;
     width: 60%;
@@ -121,14 +121,14 @@
     padding-left: 3%;
     font-size: 13px;
 }
-#user-signup-input{
+#user-signup-input-1,#user-signup-input-2,#user-signup-input-3{
     height: 40px;
     width: 96%;
     margin-bottom: 13px;
     padding-left: 3%;
     font-size: 13px;
 }
-#user-sign-input{
+#user-sign-input-1,#user-sign-input-2{
     height: 40px;
     width: 44%;
     margin-bottom: 13px;
