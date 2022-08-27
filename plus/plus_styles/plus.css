@@ -1,0 +1,153 @@
+body{
+    font-family: Open Sans,sans-serif!important;
+    font-size: 16px!important;
+    color: #4f585e;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    background-color: #fff!important;
+}
+
+
+
+#upper_part{
+    height: 500px;
+    opacity: .95;
+    
+    background-image: linear-gradient(345.34deg,#8573e1 16.31%,#8573e1 74.03%);
+    /* top: 122px; */
+    position: absolute;
+    width: 100%;
+}
+#upper_content{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 50px;
+}
+#first_div{
+    color: white;
+    font-weight: 700;
+    margin-left: 30px;
+}
+#first_div+div{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: white;
+   width: 320px;
+   font-size: 22px;
+   color: #8573e1;
+   height: 50px;
+   padding: 5px;
+   border-radius: 6px;
+   margin-left: 30px;
+}
+#box1{
+   
+    width: 80%;
+    margin: auto;
+    height: 290px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+}
+#box1>h3{
+    color: rgb(65, 65, 192);
+    font-size: 25px;
+}
+.box1_1{
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.box1_1>div{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+   
+    width: 32%;
+    margin-right: 20px;
+    height: 100px;
+   
+}
+
+.box1_1>div>img{
+    margin-right: 5px;
+  
+}
+.box1_2{
+  margin: 0px;
+ 
+}
+#additional{
+    display: flex;
+}
+#additional>div{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+span{
+    font-weight: 700;
+}
+#coupon{
+    display: flex;
+    align-items: center;
+    border: 1px solid #8573e1;
+    padding: 10px;
+    font-weight: 700;
+    color: #8573e1;
+    border-radius: 20px;
+    height: 30px;
+}
+i{
+    margin-right: 5px;
+    border: 1px solid #8573e1;
+    padding: 6px;
+    border-radius: 50%;
+}
+.coupon{
+   width: 80%;
+   margin: auto;
+   
+}
+#btn{
+    text-align: center;
+    background-color: #6f5bd6;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 250px;
+    margin: auto;
+    cursor: pointer;
+}
+#members{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#members>div{
+    width: 30%;
+}
+.review>div{
+   background-color: #e1e7ec;
+   padding: 10px;
+   border-radius: 6px;
+   height: 120px;
+}
+#qAnda{
+    width: 80%;
+    margin: auto;
+}
+#qAnda>div{
+    border: 1px solid grey;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
