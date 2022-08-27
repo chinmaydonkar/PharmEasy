@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pland.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <title>Document</title>
 </head>
 <body>
+
+    <nav id="nav_container">
+
+    </nav>
 
     <!-- -------------------------------------------Slider--------------------------------------- -->
     
@@ -221,10 +227,24 @@
     </div>
 
 
+    <footer id="footer_container">
 
+    </footer>
 
 
     
     <script src="./pland.js"></script>
+    <script type="module">
+
+        import navbar from "../components/navbar.js";
+        let navbarContainer = document.querySelector("#nav_container");
+        navbarContainer.innerHTML = navbar();
+
+        import footer from "../components/footer.js";
+        let footerContainer = document.querySelector("#footer_container");
+        footerContainer.innerHTML = footer();
+
+
+    </script>
 </body>
 </html>
