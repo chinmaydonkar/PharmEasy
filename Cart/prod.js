@@ -224,6 +224,8 @@ var cart = JSON.parse(localStorage.getItem("cart")) || [] ;
 function displayProducts(DataDisplayed) {
     DataDisplayed.forEach(function(elem){
 
+
+
         var productDiv = document.createElement("div");
         productDiv.setAttribute("id","prodBox");
 
@@ -255,8 +257,11 @@ function displayProducts(DataDisplayed) {
           addToCart(elem);
         })
 
+
         priceDiv.append(strikedPrice,discountPrice);
         productDiv.append(productVisual,productDesc,priceDiv,productAmount,productButton);
+
+        // document.querySelector("#covid_prod").innerHTML=null;
         document.querySelector("#covid_prod").append(productDiv);
     });
 

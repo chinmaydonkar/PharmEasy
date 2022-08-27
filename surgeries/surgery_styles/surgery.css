@@ -1,0 +1,201 @@
+*{
+    font-family: SurgiCare;
+}
+body>p,h1{
+    margin-left: 5%;
+}
+#upper_sec{
+    background-color: #0d8877;
+}
+#upper_content{
+    width: 95%;
+    margin: auto;
+    height: 500px;
+
+display: flex;
+}
+#image>img{
+    width: 450px;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+#options{
+ 
+}
+.first{
+   
+   
+    display: flex;
+    align-items: center;
+   
+   
+}
+.first>div{
+    margin: 5px; 
+    background-color: #117a6c;
+    border-radius: 10px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(218, 214, 214);
+    font-size: 13px;
+}
+.first>div:hover{
+    background-color: #106459;
+    cursor: pointer;
+}
+
+#desc>h2{
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 25px;
+}
+#desc>h1{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 40px;
+}
+#desc>p{
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+#contact{
+    display: flex;
+    margin-top: 30px;
+}
+#contact>div:first-child{
+    align-items: center;
+    background-color: #fdc735;
+    border: 2px solid #fdc735;
+    border-radius: 6px;
+    color: #004;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1em;
+    font-weight: 600;
+    height: 48px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    line-height: normal;
+    outline: 0;
+    padding: 0 19px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#contact>div:last-child{
+    margin-left: 30px;
+    font-size: 22px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+i{
+    padding: 10px;
+}
+#second_box{
+    width: 90%;
+    margin: auto;
+   
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#second_box>div{
+    width: 28%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(85, 83, 83);
+    font-size: 18px;
+}
+#third_box{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+#third_box>div{
+  width: 23%;
+}
+#third_box>div>img{
+    border-radius: 10px;
+    width: 100%;
+}
+#topics{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#topics>div{
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#topics>div:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+}
+#topics>div>div>img{
+    width: 50px;
+    margin-right: 10px;
+}
+#keep_better{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+   
+}
+#keep_better>div{
+    width: 50%;
+    font-size: 20px;
+}
+#keep_better>img{
+    border-radius: 20px;
+    height: 250px;
+}
+#fourth_box{
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 50px;
+}
+#fifth_box{
+background-color: rgb(39, 35, 35);
+color: white;
+padding: 20px;
+margin-top: 30px;
+}
+#doctors{
+    margin: auto;
+    width: 90%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+#doctors>div>img{
+width: 100%;
+border-radius: 10px;
+}
+.experience{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+}

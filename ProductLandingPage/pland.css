@@ -1,6 +1,6 @@
-body{
+/* body{
   color: #ffffff;
-}
+} */
 /* Slider CSS */
 *{
     margin:0;
@@ -79,6 +79,7 @@ body{
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(5,120px);
   gap: 20px;
+  margin-top: 27px;
 }
 #redirect_boxes>div{
   border: 1px solid silver;
@@ -116,7 +117,8 @@ body{
   width: 70%;
   border: 1px solid transparent;
   margin: auto;
-  margin-top: 17px;
+  /* margin-top: 17px; */
+  margin-top: 50px;
 }
 #static_HTML>div{
   margin-top: 10px;
@@ -195,7 +197,9 @@ body{
 }
 /* Flex box */
 
-
+#carousel_1{
+  margin-top: 40px;
+}
 
 /* Media Query */
 @media all and (min-width:251px) and (max-width:450px){

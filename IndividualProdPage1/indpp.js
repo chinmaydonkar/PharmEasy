@@ -95,12 +95,21 @@ function displayData(data){
 displayData(similarProductsObj);
 
 // ----------------------------------------------------------------------
+let clickable = document.querySelector("button");
+clickable.addEventListener("click", () => {
+    console.log("work");
+    window.location.href = "../Cart/Cart.html";
+})
+
+let goToCart = document.querySelector('#cart_desc>p+button');
+goToCart.addEventListener("click", () => {
+    window.location.href = "../Cart/Cart.html";
+})
 
 function addToCart(elem){
     cart.push(elem);
     localStorage.setItem("cart",JSON.stringify(cart));
-    alert("Added to Cart");
-    console.log("jhcdxbchjadnd");
+    // alert("Added to Cart");
   }
 
 // ----------------------------------------------------------------------
