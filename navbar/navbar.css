@@ -5,15 +5,15 @@
 
 .navbar{
     padding: 10px 30px;
-    /* border: 1px solid;    */
+    background-color: rgb(16,132,126);
+    color: white;
+    position: fixed;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/* .navbar div:first-child{
-    border: 1px solid red;
-} */
+
 .navbar>div>input{
     width: 500px;
     border: 1px solid;
@@ -22,6 +22,7 @@
 }
 .searchbox{
     border: 0.5px solid rgb(189, 186, 186);
+    background-color: white;
     display: flex;
     align-items: center;
     height: 50px;
@@ -41,8 +42,8 @@
     height: 90%;
     font-size: 18px;
     font-weight: 500;
-    background-color: #10847E;
-    color: white;
+    background-color:white;
+    color:  #10847E;
     border: transparent;
     border-radius: 30px;
     margin-right: 3px;
