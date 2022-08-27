@@ -3,7 +3,7 @@
     
 }
 .navbar_container{
-position: fixed;
+/* position: fix; */
 }
 .navbar{
     padding: 10px 30px;
