@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add To Card </title>
 </head>
 <style>
 
@@ -520,6 +520,7 @@ padding: 30px;
     .green {
       color: #14cda8;
     }
+    
     #truck {
       width: 30px;
     }
@@ -548,7 +549,7 @@ padding: 30px;
         font-weight: 600;
       }
       #discountMRP{
-        color: #14cda8;
+        color: red;
       }
 
       #product_box{
@@ -658,7 +659,7 @@ span {
 
 .footer_container{
   background-color: rgb(237, 243, 245);
-  margin-top: 20%;
+  margin-top: 5%;
 }
 
 .foot-top{
@@ -684,14 +685,62 @@ span {
     height: 20px;
 }
 
+
+.bt:hover{
+background-color: #10847E;
+}
+
+
+
+#totalamount > td {
+        font-weight: bold;
+        font-size: 16px;
+        color: black;
+        border-top: 1px solid rgb(216, 215, 215);
+        line-height: 50px;
+      }
      
+      #down{
+        display: grid;
+
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 50px;
+        margin-left: 30px;
+        margin-right:30px;
+        margin-top: 150px;
+        /* border: 1px solid black; */
+        width: 65%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+        
+      }
+      #lakh{
+        /* border: 1px solid black; */
+        padding-left: 60px;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+      }
+
+      #img2>img{
+       height: 400px;
+       width: 300px;
+      }
+      #img2{
+        
+        width: 20%;
+        margin-left: 40%;
+        margin-top: 30px;
+      }
+
  
 </style>
 
 <body>
 
 
-  <div class="navbar_container">
+  <!-- <div class="navbar_container">
     <div class="navbar">
         <div>
         <div><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
@@ -700,16 +749,15 @@ span {
         <div class="nav_add">
             <i class="fa-solid fa-bolt-lightning" style="color:rgb(253,195,46)";></i>
             <p>Express Delivery</p>
-            <!-- <h5>Select Pincode</h5> -->
+            
         </div>
         </div>
         <div class="searchbox">
             <input type="text" name="" id="searchBar" placeholder="Search For">
             <button>Search</button>
         </div>
-        <!-- <div>
-            <h3>Download App</h3>
-        </div> -->
+       
+        </div> 
         <div>
             <a href="">Hello,Log In</a>
         </div>
@@ -731,7 +779,10 @@ span {
     <div><a href="">Surgeries</a></div>
     <div><a href="">Value Store</a></div>
 </div>
-</div>
+</div> -->
+<nav id="nav_container">
+
+</nav>
 
    
           
@@ -771,7 +822,7 @@ span {
                 <button type="button" class="buycpn" onclick="payment()">Proceed To Buy</button>
                
                 
-                <div id="box1-2-3">
+                <!-- <div id="box1-2-3">
                     <h3 id="totalitems">Order Summary</h3>
                     <table>
                       <tr>
@@ -800,7 +851,42 @@ span {
                        <td id="totalamount">₹0</td>
                       </tr>
                     </table>
+                  </div> -->
+                 
+
+                  <div id="box1-2-3">
+                    <h5 id="totalitems">PRICE DETAILS(0 item)</h5>
+                    <table>
+                      <tr>
+                        <td>Total MRP</td>
+                        <td id="totalMRP">₹</td>
+                      </tr>
+                      <tr>
+                        <td>Discount on MRP</td>
+                        <td id="discountMRP"><span class="green">-₹</span></td>
+                      </tr>
+          
+                      <tr>
+                        <td>Convenienve Fee <span class="pink">Know More</span></td>
+                        <td>
+                          <div>
+                            <span class="linethrough">₹99</span>
+                            <span class="green">FREE</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr id="totalamount">
+                        <td>Total Amount</td>
+                        <td id="totalamount2">₹</td>
+                      </tr>
+                    </table>
                   </div>
+
+                 
+              
+
+
+
 
                 <div id="sborder">
                     <div id="saving">
@@ -923,8 +1009,32 @@ span {
 </div>
 
 
+<div id="down">
+  <div id="lakh">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1.25&q=100" alt="">
+    <h3>1 Lakh+ Products</h3>
+    <h4>We maintain strict quality <br> controls on all our partner <br> retailers, so that you always <br> get standard quality <br> products.</h4>
+  </div>
+  <div id="lakh">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1.25&q=100" alt="">
+   <h3>Secure Payment</h3>
+   <h4>100% secure and trusted <br> payment protection</h4>
+  </div>
+  <div id="lakh">
+    <img src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=1.25&q=100" alt="">
+  <h3>Easy Return</h3>
+  <h4>We have a new and dynamic <br> return window policy for <br> medicines and healthcare <br> items. Refer FAQs section for <br> more details.</h4>
+  </div>
+
+</div>
+
+<div id="img2">
+  <img src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" alt="">
+</div>
+
+
 <!-- <h3>-----------------------------------Footer start</h3> -->
-<div class="footer_container">
+<!-- <div class="footer_container">
   <div class="foot-top">
   <div class="foot_col1">
       <ul>
@@ -1010,16 +1120,30 @@ span {
       <div><p>© 2022 PharmEasy. All Rights Reserved</p></div>
   </div>
 </div>
-</div>
+</div> -->
 
+<a href="./components/footer.js"></a>
+<footer id="footer_container">
+
+</footer>
 
 </body>
 </html>
 
 
-<script>
+
+ 
+
+
+
+
+<!-- <script>
 
 var cart = JSON.parse(localStorage.getItem("cart")) || [] ;
+
+
+
+
 
 let itemcount = cart.length;
     document.querySelector(".wishcount").innerText = ` ${itemcount} `
@@ -1075,7 +1199,7 @@ DataDisplayed.forEach(function(elem,index){
             item.qty = btnSelect.value;
 
             localStorage.setItem("cart", JSON.stringify(cart));
-            //dropdownDiv.value = item.qty;
+           
             displayProducts(cart);
 
         })
@@ -1100,8 +1224,6 @@ DataDisplayed.forEach(function(elem,index){
         productAmount.setAttribute("id","prodAmt");
         productAmount.innerText = elem.price;
 
-        // var priceDiv = document.createElement('div');
-        // priceDiv.setAttribute("id","priceDiv");
 
         var strikedPrice = document.createElement('s');
         strikedPrice.innerText = elem.cut;
@@ -1109,20 +1231,20 @@ DataDisplayed.forEach(function(elem,index){
         var discountPrice = document.createElement('span');
         discountPrice.innerText = elem.dis;
 
-        // var expressdly = document.createElement("div");
-        // expressdly.setAttribute("id", "expressdly");
-        // expressdly.innerHTML = "Express Delivery <span>Today, before 8 pm</span>";
-
+       
     var card2=document.createElement("div");
     card2.setAttribute("id" ,"data2")
 
     var button=document.createElement("button");
+    button.setAttribute("class","bt")
     button.innerText="Delete"
     button.style.color="white";
     button.style.backgroundColor="red"
     button.style.width="50px"
     button.style.height="20px"
    button.style.borderRadius="5px"
+   button.style.marginBottom="13px"
+   button.style.border="none"
     button.style.cursor="pointer"
     button.addEventListener("click",function(){
         deleteItem(elem,index);
@@ -1159,13 +1281,37 @@ function  deleteItem(elem,index){
         window.location.href="payment.html"
     }
 
-    var total =cart.reduce(function (acc,cv){
-        return acc+Number(cv.price)
-    },0)
-    console.log(total)
-    document.querySelector("#totalMRP").innerHTML=` ${total}`
-    document.querySelector("#totalamount").innerHTML=` ${total}`
+    
+   
+    var total = cart.reduce(function (acc, cv) {
+    return acc + Number(cv.price);
+  }, 0);
+  console.log("total:", total);
 
+  var totalMRP = cart.reduce(function (acc, cv) {
+    return acc + Number(cv.cut);
+  }, 0);
+  console.log("totalMRP:", totalMRP);
+  document.getElementById("totalMRP").innerHTML = `₹${total}`;
+
+  document.getElementById("discountMRP").innerHTML = `-₹${ total - totalMRP }`;
+
+  document.getElementById("totalamount2").innerHTML = `₹${totalMRP}`;
+  
+
+    
    
 
+</script> -->
+<script src="Cart.js" ></script>
+<script type="module">
+ import navbar from "./components/navbar.js";
+  let navbarContainer = document.querySelector("#nav_container");
+  navbarContainer.innerHTML = navbar();
+
+  import footer from "./components/footer.js";
+  document.querySelector("#footer_container").innerHTML=footer()
+  // let footerContainer = document.querySelector("#footer_container");
+  // footerContainer.innerHTML = footer();
 </script>
+  

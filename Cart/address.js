@@ -1,12 +1,14 @@
+//update priceBlock-container
+
 updatePriceblock();
 function updatePriceblock() {
    let mrp = JSON.parse(localStorage.getItem("MRP")) || [];
    
    let z = document.getElementById("priceDetail-value actual-price");
-   z.innerText = `₹ ${mrp}`;
+   z.innerText = `₹ 3,560 ${mrp}`;
    let discount = JSON.parse(localStorage.getItem("discount")) || [];
    let x = document.getElementById("priceDetail-value discount-price teal-1");
-   x.innerText = `₹ ${discount}`;
+   x.innerText = `₹ 550${discount}`;
    let orderData = JSON.parse(localStorage.getItem("amount")) || [];
    if(orderData < 300 ){
       orderData.innerHTML = "300"
@@ -15,12 +17,10 @@ function updatePriceblock() {
    }
  
    let y = document.getElementById("priceDetail-total");
-   y.innerText = `₹ ${orderData}`
+   y.innerText = `₹ 3010 ${orderData}`
 
-   // let total = document.getElementById("priceDetail-total");
-   // total.innerText = 
+  
 }
-
 
 
 document.querySelector("form").addEventListener("submit", addfun);
@@ -39,4 +39,5 @@ function addfun(event) {
    };
    localStorage.setItem("addDetails", JSON.stringify(obj));
    window.location.href = "Cart.html";
+   alert("Order Succesfull")
 };
