@@ -7,6 +7,7 @@
     <title>Product Page</title>
     <link rel="stylesheet" href="./prod.css">
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <body>
     
@@ -100,7 +101,12 @@
         <aside id="covid_prod">
             
         </aside>
+
     </div>
+
+    <footer id="footer_container">
+
+    </footer>
 
     <script src="./prod.js"></script>
     <script type="module">
@@ -108,6 +114,10 @@
         import navbar from "../components/navbar.js";
         let navbarContainer = document.querySelector("#nav_container");
         navbarContainer.innerHTML = navbar();
+
+        import footer from "../components/footer.js";
+        let footerContainer = document.querySelector("#footer_container");
+        footerContainer.innerHTML = footer();
 
     </script>
 </body>
