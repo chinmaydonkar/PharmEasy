@@ -3,7 +3,8 @@ let navbar = () =>{
     <div class="navbar_container">
         <div class="navbar">
             <div>
-            <div><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="">
+            <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
             </div>
                 <hr>
             <div class="nav_add">
@@ -20,13 +21,13 @@ let navbar = () =>{
                 <h3>Download App</h3>
             </div> -->
             <div>
-                <a href="" id="user-details">Hello,Log In</a>
+                <a href="" id="user-details" style ="color: white;">Hello,Log In</a>
             </div>
             <div>
-               <span><i class="fa-solid fa-percent"></i></span><a href="">Offers</a>
+               <span><i class="fa-solid fa-percent" style ="color: white;"></i></span><a href="" style ="color: white;">Offers</a>
             </div>
             <div>
-                <span><i class="fa-solid fa-cart-shopping"></i></span><a href="">Cart</a>
+                <span><i class="fa-solid fa-cart-shopping" style ="color: white;"></i></span><a href="" style ="color: white;">Cart</a>
             </div>
         </div>
     
