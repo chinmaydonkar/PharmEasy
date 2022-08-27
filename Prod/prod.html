@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="./prod.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 <body>
     
+    <nav id="nav_container">
+
+    </nav>
 
     <article>
         <div id="top"> Home > All Categories > Covid Essentials</div>
@@ -46,23 +50,23 @@
                 <p id="cat">Sub category</p>
                 <div id="radio1">
                     <p>Home Hygiene Essentials</p>
-                    <input type="radio">
+                    <input type="radio" value="Home Hygiene Essentials" id="radio_1">
                 </div>
                 <div id="radio2">
                     <p>Medical Equipments</p>
-                    <input type="radio">
+                    <input type="radio" value="Medical Equipments" id="radio_2">
                 </div>
                 <div id="radio3">
                     <p>Health Supplements</p>
-                    <input type="radio">
+                    <input type="radio" value="Health Supplements" id="radio_3">
                 </div>
                 <div id="radio4">
                     <p>Masks & Gloves</p>
-                    <input type="radio">
+                    <input type="radio" value="Masks & Gloves" id="radio_4" >
                 </div>
                 <div id="radio5">
                     <p>Pills</p>
-                    <input type="radio" id="radio_5">
+                    <input type="radio" id="radio_5" value="Pills">
                 </div>
             </div>
             <hr id="radio_cat_line">
@@ -73,19 +77,19 @@
                 <p id="cat">Price</p>
                 <div id="check1">
                     <p>Below 99</p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="" value="Below 99">
                 </div>
                 <div id="check2">
                     <p>99 - 999</p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="99 - 999">
                 </div>
                 <div id="check3">
                     <p>999 - 1999</p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="999 - 1999">
                 </div>
                 <div id="check4">
                     <p>Above 1999</p>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="Above 1999">
                 </div>
             </div>
 
@@ -99,5 +103,12 @@
     </div>
 
     <script src="./prod.js"></script>
+    <script type="module">
+
+        import navbar from "../components/navbar.js";
+        let navbarContainer = document.querySelector("#nav_container");
+        navbarContainer.innerHTML = navbar();
+
+    </script>
 </body>
 </html>

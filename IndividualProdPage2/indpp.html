@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Individual Product Page</title>
     <link rel="stylesheet" href="./indpp.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 <body>
+
+  <nav id="nav_container">
+
+  </nav>
 
     <div id="arrow">Home > Healthcare > PharmEasy Glutathione </div>
     <div id="box_ind">
@@ -173,5 +178,12 @@
   </div>
     
     <script src="./indpp.js"></script>
+    <script type="module">
+
+      import navbar from "../components/navbar.js";
+      let navbarContainer = document.querySelector("#nav_container");
+      navbarContainer.innerHTML = navbar();
+
+  </script>
 </body>
 </html>

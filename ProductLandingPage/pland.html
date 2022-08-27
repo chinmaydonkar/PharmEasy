@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pland.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
     <title>Document</title>
 </head>
 <body>
+
+    <nav id="nav_container">
+
+    </nav>
 
     <!-- -------------------------------------------Slider--------------------------------------- -->
     
@@ -226,5 +231,12 @@
 
     
     <script src="./pland.js"></script>
+    <script type="module">
+
+        import navbar from "../components/navbar.js";
+        let navbarContainer = document.querySelector("#nav_container");
+        navbarContainer.innerHTML = navbar();
+
+    </script>
 </body>
 </html>
