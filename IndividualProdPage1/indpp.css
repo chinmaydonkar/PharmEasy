@@ -59,6 +59,7 @@
     line-height: 18px;
     color: #4f585e;
     font-weight: 400;
+    margin-top: 30px;
 }
 #desc>p:first-child{
     font-family: sans-serif;
