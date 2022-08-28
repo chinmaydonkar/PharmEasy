@@ -88,7 +88,7 @@ function Click(sign){
      };
      if(flag==1){
         alert("login successfully")
-         window.location.href="/"
+         window.location.href="../homepage/index.html"
          //home page
      }
      else {
