@@ -7,8 +7,11 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/86d497a8b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./medicine_styles/medicine.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <body>
+     <div id="nav_container"></div>
     <h1>Oreder Medicines Online</h1>
     <div id="upper">
         <div id="left">
@@ -168,6 +171,16 @@
         <p>You can cancel your order from the ‘Order Details’ screen before it is out for delivery. Simply click on the Account icon at the bottom of the App Homepage > select ‘Orders’ > Select the order which you want to cancel > tap “Cancel”. You can also refuse it at the time of delivery and a refund will be processed to the payment source, if the order amount was paid online.</p>
     </div>
    </div>
+     <div id="footer_container"></div>
 </body>
 </html>
 <script src="./medicine_scripts/medicine.js"></script>
+<script type="module">
+    import navbar from "../components/navbar.js";
+  let navbarContainer = document.querySelector("#nav_container");
+  navbarContainer.innerHTML = navbar();
+
+  import footer from "../components/footer.js";
+  let footerContainer = document.querySelector("#footer_container");
+  footerContainer.innerHTML = footer();
+</script>
