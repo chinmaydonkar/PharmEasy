@@ -35,7 +35,7 @@ let navbar = () =>{
         <div><a href="../Medicine/medicine.html">Medicine</a></div>
         <div><a href="../Lab Test/lab_test.html">Lab Test</a></div>
         <div><a href="../ProductLandingPage/pland.html">Healthcare</a></div>
-        <div><a href="../">Health Blogs</a></div>
+        <div><a href="">Health Blogs</a></div>
         <div><a href="../plus/plus.html">PLUS</a></div>
         <div><a href="../Offers/offers.html">Offers</a></div>
         <div><a href="../surgeries/surgery.html">Surgeries</a></div>

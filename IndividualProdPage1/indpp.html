@@ -195,6 +195,17 @@
       let footerContainer = document.querySelector("#footer_container");
       footerContainer.innerHTML = footer();
 
+      let dataBase = JSON.parse(localStorage.getItem("signUpDatabase"))|| "Hello,Login"
+console.log(dataBase);
+let userName;
+if(dataBase == "Hello,Login"){
+     userName = "Hello,Login"
+}
+else{
+     userName = dataBase[0].name;
+}
+document.getElementById("user-details").innerText = userName
+
   </script>
 </body>
 </html>

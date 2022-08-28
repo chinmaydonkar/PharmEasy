@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../navbar/navbar.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <script src="https://kit.fontawesome.com/b055f88b36.js" crossorigin="anonymous"></script>
     <style>
         
         body{
@@ -1410,6 +1411,16 @@ import navbar from "../components/navbar.js";
     let footerContainer = document.querySelector("#footer_container");
     footerContainer.innerHTML = footer();
 
+    let dataBase = JSON.parse(localStorage.getItem("signUpDatabase"))|| "Hello,Login"
+console.log(dataBase);
+let userName;
+if(dataBase == "Hello,Login"){
+     userName = "Hello,Login"
+}
+else{
+     userName = dataBase[0].name;
+}
+document.getElementById("user-details").innerText = userName
 
 //  let img= document.querySelector("#d>div>a>img");
 
@@ -1453,3 +1464,4 @@ import navbar from "../components/navbar.js";
 //       }, 2000)
 
 </script>
+<!-- <script src="../navbar/navbar.js" type="module"></script> -->
