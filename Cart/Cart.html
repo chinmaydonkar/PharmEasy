@@ -5,125 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add To Card </title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <style>
 
-*{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
 
-.navbar{
-    padding: 10px 30px;
-    /* border: 1px solid;    */
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* .navbar div:first-child{
-    border: 1px solid red;
-} */
-.navbar>div>input{
-    width: 500px;
-    border: 1px solid;
-    border-radius: 10px;
-    height: 50px;
-}
-.searchbox{
-    border: 0.5px solid rgb(189, 186, 186);
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 45%;
-    border-radius: 30px;
-}
 
-#searchBar{
-    border:0px solid;
-    font-size: 18px;
-    margin-left: 20px;
-    height: 90%;
-}
-.searchbox button{
-    /* padding: 15px 30px; */
-    width: 100px;
-    height: 90%;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: #10847E;
-    color: white;
-    border: transparent;
-    border-radius: 30px;
-    margin-right: 3px;
-}
-.navbar div:nth-child(1){
-    display: flex;
-    height: 100%;
-}
-.navbar div:nth-child(1) > img{
-    width: 150px;
-    height: 80%;
-}
-.nav_add{
-    /* border: 1px solid blue; */
-    height: 100%;
-}
-.nav_add {
-    display: flex;
-    align-items: center;
-}
-.nav_add i{
-    color: #FDC32E;
-    padding: 0 5px;
-}
-.nav_add p{
-    font-size: 18px;
-    font-weight: 600;
-    padding: 0 10px 5px;
-}
-.navbar hr{
-    display: inline;
-    margin: 10px 20px;
-    background-color: grey;
-    
-}
-.navbar a{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-}
-.navbar i{
-    color: black;
-    padding: 0 10px;
-}
-.sub_nav{
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 15px 100px;
-    background-color: #EEF4FF;
-}
-.sub_nav a{
-    text-decoration: none;
-    color: black;
-}
-.sub_nav a:hover{
-    text-decoration: underline;
-    color: gray;
-}
-.navbar a:hover{
-    text-decoration: underline;
-    color: gray;
-}
 
 
 
 
     #whole{
-      border: 1px solid black;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     
         height: 100%;
         width: 100%;
     }
@@ -657,33 +552,6 @@ span {
 }
 
 
-.footer_container{
-  background-color: rgb(237, 243, 245);
-  margin-top: 5%;
-}
-
-.foot-top{
-    display: flex;
-    justify-content: space-between;
-    line-height: 30px;
-}
-.foot-top li,ul{
-    list-style: none;
-}
-.foot-top ul :hover{
-   color:gray;
-   cursor: pointer;
-}
-.foot-end{
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.foot-end img{
-    margin: 10px 20px;
-    height: 20px;
-}
 
 
 .bt:hover{
@@ -1122,7 +990,7 @@ background-color: #10847E;
 </div>
 </div> -->
 
-<a href="./components/footer.js"></a>
+<a href="../components/footer.js"></a>
 <footer id="footer_container">
 
 </footer>
@@ -1305,11 +1173,11 @@ function  deleteItem(elem,index){
 </script> -->
 <script src="Cart.js" ></script>
 <script type="module">
- import navbar from "./components/navbar.js";
+ import navbar from "../components/navbar.js";
   let navbarContainer = document.querySelector("#nav_container");
   navbarContainer.innerHTML = navbar();
 
-  import footer from "./components/footer.js";
+  import footer from "../components/footer.js";
   document.querySelector("#footer_container").innerHTML=footer()
   // let footerContainer = document.querySelector("#footer_container");
   // footerContainer.innerHTML = footer();
