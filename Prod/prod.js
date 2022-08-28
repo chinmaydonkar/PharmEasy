@@ -266,6 +266,7 @@ displayProducts(DataDisplayed);
 function addToCart(elem){
   cart.push(elem);
   localStorage.setItem("cart",JSON.stringify(cart));
+  alert("Added to Cart Successfully !");
 }
 
 var Sort = document.querySelector("#basic_filtering");

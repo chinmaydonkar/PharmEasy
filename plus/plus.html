@@ -189,4 +189,13 @@
     <div id="footer_container"></div>
 </body>
 </html>
-<script src="./plus_scripts/plus.js" type="module"></script>
+<script src="./plus_scripts/plus.js"></script>
+<script type="module">
+    import navbar from "../components/navbar.js";
+  let navbarContainer = document.querySelector("#nav_container");
+  navbarContainer.innerHTML = navbar();
+
+  import footer from "../components/footer.js";
+  let footerContainer = document.querySelector("#footer_container");
+  footerContainer.innerHTML = footer();
+</script>
