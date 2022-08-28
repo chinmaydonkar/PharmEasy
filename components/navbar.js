@@ -4,7 +4,7 @@ let navbar = () =>{
         <div class="navbar">
             <div>
             <div>
-            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+           <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
             </div>
                 <hr>
             <div class="nav_add">
