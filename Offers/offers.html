@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmEasy™ Offers & Coupon Codes: Upto 80% OFF, Cashbacks & more</title>
     <link rel="stylesheet" href="./offer_styles/offers.css">
+     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
 </head>
 <body>
+     <div id="nav_container"></div>
     <div id="upper">
         <h1>PharmEasy Offers & Coupon Codes</h1>
         <p>PharmEasy is one of India’s leading online healthcare platforms that allows you to make great savings on your medicines and healthcare needs every day.From finding the prescribed medicine you need to the wellness product that is best suitable for you, PharmEasy is your one-stop destination for all your healthcare needs. Affordable prices offered by our partner retail pharmacies allow you to focus on your and your family’s health while we take care of your budget. </p>
@@ -106,6 +109,16 @@
     </ul>
    </div>
 </div>
+    <div id="footer_container"></div>
 </body>
 </html>
 <script src="./offer_scripts/offers.js"></script>
+<script type="module">
+    import navbar from "../components/navbar.js";
+  let navbarContainer = document.querySelector("#nav_container");
+  navbarContainer.innerHTML = navbar();
+
+  import footer from "../components/footer.js";
+  let footerContainer = document.querySelector("#footer_container");
+  footerContainer.innerHTML = footer();
+</script>
