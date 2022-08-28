@@ -21,6 +21,7 @@
     border: 0.5px solid rgb(189, 186, 186);
     background-color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     width: 45%;
@@ -35,6 +36,7 @@
 }
 .searchbox button{
     /* padding: 15px 30px; */
+    cursor: pointer;
     width: 100px;
     height: 90%;
     font-size: 18px;
@@ -69,6 +71,7 @@
     font-size: 18px;
     font-weight: 600;
     padding: 0 10px 5px;
+    color: white;
 }
 .navbar hr{
     display: inline;

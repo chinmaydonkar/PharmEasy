@@ -6,6 +6,7 @@ body>p,h1{
 }
 #upper_sec{
     background-color: #0d8877;
+    margin: auto;
 }
 #upper_content{
     width: 95%;
@@ -27,9 +28,12 @@ display: flex;
    
     display: flex;
     align-items: center;
+    /* font-size: 185px; */
+    
    
    
 }
+
 .first>div{
     margin: 5px; 
     background-color: #117a6c;

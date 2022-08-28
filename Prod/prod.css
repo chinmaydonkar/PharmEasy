@@ -240,6 +240,10 @@ left: 52px;
  display: flex;
  justify-content: space-between;
 }
+
+#prodBtn{
+margin-bottom: 10px;
+}
 /* Product Section */
 
 
