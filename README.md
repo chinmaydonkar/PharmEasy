@@ -4,6 +4,8 @@
 
 This is the clone of PharmEasy (https://pharmeasy.in/). We started this project as a 5 members team during construct week organized at Masai School, Bengaluru, Karnataka.
 
+### Clone link : (https://enchanting-bonbon-ad5692.netlify.app/)
+
 ## About PharmEasy
  PharmEasy is an Indian e-pharmacy company that sells medicines, diagnostics and telehealth online.
 
